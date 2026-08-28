@@ -3,41 +3,45 @@
   "name": "AnhPT Official Workouts",
   "workouts": [
     {
-      "id": "daily-plank",
-      "name": "Daily Plank",
-      "description": "Bài tập plank hằng ngày",
+      "id": "bai-tap-dit-cua-tho-bay-mau",
+      "name": "Tập đít với chị Xô",
+      "description": "Nếu ai hỏi mày tập cái này làm cái giề, thì trả lời là tập cho đít bự chứ làm gì nữa",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/v1.0.0/daily-plank-1.0.0.anhpt.zip",
-      "sha256": "c4b73c67e1a2540317ca616d7e68500a89a41cc413f0d739b84bd1f1f736cb69",
-      "size": 4535675,
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/local-test/bai-tap-dit-cua-tho-bay-mau-1.0.0.anhpt.zip",
+      "sha256": "087f55c13185d75ffad0d6b423f334aa5468b872c25b70070301f58f9cd724d1",
+      "size": 1501,
       "tags": [
-        "core,quick"
+        "funny",
+        "mong",
+        "squat",
+        "daily"
       ],
+      "minAppVersion": "0.8.2"
+    },
+    {
+      "id": "daily-plank",
+      "name": "Tập Plank mỗi ngày",
+      "description": "Bài này nên tập đều đặn mỗi ngày để nâng cơ bụng",
+      "version": "1.0.0",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/local-test/daily-plank-1.0.0.anhpt.zip",
+      "sha256": "0f9511e5721f23ddcbb40d2e88cdde33ca95a9465a9583e6d9e21b03a7a0d62c",
+      "size": 4529730,
+      "tags": [],
       "minAppVersion": "0.8.2"
     },
     {
       "id": "meditation-before-sleep",
-      "name": "Thiền buông thư trước khi ngủ",
-      "description": "Bài tập thư giãn để có giấc ngủ ngon",
+      "name": "Thiền hơi thở trước khi ngủ",
+      "description": "Bài thiền nhẹ nhàng giúp tập trung vào hơi thở, hít thở sâu, thả lỏng cơ thể và chuẩn bị cho một giấc ngủ yên. Hãy tập ở tư thế nằm hoặc ngồi thoải mái, trong không gian yên tĩnh.",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/v1.0.0/mediation-before-sleep.anhpt.zip",
-      "sha256": "b08a136ea877ca02f0c47694d67a94097042009995eb1a251294ef4a9c1d8365",
-      "size": 20963797,
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/local-test/meditation-before-sleep-1.0.0.anhpt.zip",
+      "sha256": "7f924ad25aa2fcd3d30dfc4e4767e88e7fb13045d2a08d8ae8f4461e1a01298a",
+      "size": 20915452,
       "tags": [
-        "sleep,mediation"
-      ],
-      "minAppVersion": "0.8.2"
-    },
-    {
-      "id": "bai-tap-dit-cua-tho-bay-mau",
-      "name": "Bài tập đít của thỏ",
-      "description": "Tập cho mông to nha",
-      "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/v1.0.0/bai-tap-dit-cua-tho-bay-mau.anhpt.zip",
-      "sha256": "5c1c5fc67e3c2adac525f996cbd3f5ac3f0b8d48cf50dd9708c933b0ade26086",
-      "size": 1577,
-      "tags": [
-        "funny,squad"
+        "meditation",
+        "breathing",
+        "relaxation",
+        "sleep"
       ],
       "minAppVersion": "0.8.2"
     }

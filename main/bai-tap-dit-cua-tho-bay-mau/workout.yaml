@@ -1,0 +1,108 @@
+version: 1
+
+name: Tập đít với chị Xô
+description: Nếu ai hỏi mày tập cái này làm cái giề, thì trả lời là tập cho đít bự chứ làm gì nữa
+
+tags:
+  - funny
+  - mong
+  - squat
+  - daily
+
+start_countdown: 3s
+
+voice:
+  language: vi
+  mode: combined
+  announce_every: 10s
+  countdown_from: 5s
+  announce_step_name: true
+  announce_start: true
+  announce_finish: true
+
+feedback:
+  sound: beep
+  haptic: medium
+
+audio:
+  ducking: medium
+
+steps:
+
+  - name: Ê Thỏ, dậy tập đít đi mầy
+    duration: 10s
+    guide: >
+      Lớn rồi mà nằm ngủ hoài dzậy thì sau này làm gì cho đời được hả con.
+      Ráng dậy tập đi con.
+
+  - name: Giờ thì ngoáy mông 5 cái
+    duration: 10s
+    guide: >
+      Ngoáy mạnh lên cho nó nóng người lên
+
+  - repeat: 5
+    steps:
+      - name: Cúi người ra phía trước
+        duration: 2s
+      - name: Ngoáy sang trái
+        duration: 2s
+      - name: Ngoáy sang phải
+        duration: 2s
+      - name: Giựt giựt cái mông lên trên
+        duration: 2s
+
+  - name: Gồi đó. Giờ thì squat nhổ cà rốt
+    duration: 10s
+    guide: >
+      Ngày nào mà không khổ cà rốt thì cứ như là đang thiếu thiếu cái gì dzậy.
+
+  - repeat: 10
+    steps:
+      - name: Cúi xuống
+        duration: 3s
+      - name: Giơ hai tay ra trước, hai tay nắm chặt vào nhau
+        duration: 3s
+      - name: Nhổ từ từ lên
+        duration: 3s
+      - name: Rồi đó, giờ lại tiếp ...
+        duration: 3s
+
+  - name: Squad phê không mầy. Giờ muốn mông to thì phải vỗ mông
+    duration: 10s
+    guide: >
+      Đưa hai tay ra phía sau. Rồi ... vỗ mông đi. vỗ to vào nha. Càng vỗ to thì mông càng to. Mày không tin cũng được, những cứ vỗ đi
+
+  - repeat: 5
+    steps:
+      - name: Vỗ mông 1 cái
+        duration: 2s
+      - name: Vỗ mông 2 cái
+        duration: 2s
+      - name: rồi lại
+        duration: 1s
+
+  - name: Bây giờ thì nằm sấp xuống
+    duration: 30s
+    guide: >
+      Uốn cong cái gót chân cho chạm dzô mông nha. Bài này là tập cơ đít đó.
+      Đập vừa vừa thôi, đừng có làm quá rồi lát khỏi ngồi ỉa luôn.
+
+  - name: Giờ thì đứng bằng chân trái
+    duration: 20s
+    guide: >
+      Rồi hơi cúi xuống chút xíu, lưng giữ thẳng, và bắt chéo chân còn lại lên đầu gối chân kia.
+
+  - name: Được rồi đó, giờ thì xoa mông thư giãn đi
+    duration: 20s
+    guide: >
+      Xoa nào, xoa nào .... phê không
+
+  - name: Bây giờ thì nằm ngửa ... nằm thôi, không làm gì hết
+    duration: 60s
+    guide: >
+      Chỉ nằm im, thở đều và tận hưởng nha.
+
+  - name: Hết bài
+    duration: 10s
+    guide: >
+      Xong rồi nha mầy. Giờ thì đi đo mông đi xem có to lên không.

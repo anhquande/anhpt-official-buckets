@@ -1,0 +1,66 @@
+# AnhPT build artifacts
+*.anhpt.zip
+dist/
+build/
+tmp/
+temp/
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# VS Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# PowerShell temporary files
+*.ps1xml.tmp
+*.clixml
+*.tmp
+
+# Python cache, in case build scripts use Python later
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Node tooling, if scripts are added later
+node_modules/
+
+# Local coverage/test output
+coverage/
+TestResults/
