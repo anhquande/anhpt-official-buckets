@@ -1,0 +1,81 @@
+version: 2
+
+name: Bài tập gập bụng cơ bản
+description: Bài tập gập bụng 12 lần giúp luyện cơ bụng với chân luôn duỗi thẳng và chuyển động có kiểm soát.
+
+tags:
+  - abs
+  - sit-up
+  - core
+  - beginner
+
+start_countdown: 3s
+
+voice:
+  language: vi
+  mode: combined
+  announce_every: 10s
+  countdown_from: 3s
+  announce_step_name: true
+  announce_start: true
+  announce_finish: true
+
+feedback:
+  sound: beep
+  haptic: medium
+
+audio:
+  ducking: medium
+
+steps:
+  - name: Chuẩn bị tư thế
+    id: chuan-bi
+    duration: 28s
+    countdown: false
+    guide: >
+      Nằm ngửa trên sàn trong tư thế thoải mái. Duỗi thẳng hai chân và giữ hai chân sát sàn.
+      Đặt hai tay ra sau gáy. Hãy giữ chân luôn duỗi thẳng trong suốt bài tập.
+      Chúng ta sẽ thực hiện 12 lần gập bụng.
+
+  - name: Hướng dẫn động tác
+    id: huong-dan
+    duration: 38s
+    countdown: false
+    guide: >
+      Siết cơ bụng và từ từ nâng thân người lên cho đến khi phần thân trên gần vuông góc với sàn.
+      Sau đó gập người về phía trước, cúi đầu xuống và đưa hai tay chạm về phía bàn chân.
+      Trong suốt động tác, hai chân phải luôn duỗi thẳng. Sau đó từ từ trở về tư thế nằm ban đầu.
+
+  - name: Chuẩn bị bắt đầu
+    id: chuan-bi-bat-dau
+    duration: 10s
+    countdown: false
+    guide: >
+      Sẵn sàng nhé. Giữ chân duỗi thẳng. Siết bụng và bắt đầu.
+
+  - repeat: 12
+    steps:
+      - name: Ngồi dậy
+        id: ngoi-day
+        duration: 7s
+        guide: >
+          Siết bụng. Từ từ ngồi dậy, giữ chân duỗi thẳng.
+
+      - name: Gập người chạm chân
+        id: gap-nguoi-cham-chan
+        duration: 6s
+        guide: >
+          Gập người về trước. Đưa hai tay chạm về phía bàn chân.
+
+      - name: Trở về tư thế nằm
+        id: tro-ve-tu-the-nam
+        duration: 7s
+        guide: >
+          Từ từ hạ người xuống. Giữ chân duỗi thẳng.
+
+  - name: Hoàn thành
+    id: hoan-thanh
+    duration: 15s
+    countdown: false
+    guide: >
+      Hoàn thành 12 lần gập bụng. Thả lỏng cơ bụng, duỗi người và hít thở đều. Tốt lắm.
