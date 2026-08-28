@@ -27,6 +27,19 @@
         "sleep,mediation"
       ],
       "minAppVersion": "0.8.2"
+    },
+    {
+      "id": "bai-tap-dit-cua-tho-bay-mau",
+      "name": "Bài tập đít của thỏ",
+      "description": "Tập cho mông to nha",
+      "version": "1.0.0",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/v1.0.0/bai-tap-dit-cua-tho-bay-mau.anhpt.zip",
+      "sha256": "5c1c5fc67e3c2adac525f996cbd3f5ac3f0b8d48cf50dd9708c933b0ade26086",
+      "size": 1577,
+      "tags": [
+        "funny,squad"
+      ],
+      "minAppVersion": "0.8.2"
     }
   ]
 }
