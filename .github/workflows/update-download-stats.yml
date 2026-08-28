@@ -3,7 +3,7 @@ name: Update workout download stats
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 2 * * *"
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
