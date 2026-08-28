@@ -105,3 +105,17 @@ jobs:
               --title "$RELEASE_TAG" \
               --generate-notes
           fi
+
+      - name: Refresh download counts
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/update_download_counts.py
+
+      - name: Commit refreshed download counts
+        shell: bash
+        run: |
+          git add main/bucket.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update download counts for ${RELEASE_TAG} [skip ci]"
+            git push origin HEAD:main
+          fi
