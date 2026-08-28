@@ -2,7 +2,7 @@
 
 This repository contains the editable source files for the official AnhPT workout catalog.
 
-Workout packages are **not stored as `.anhpt.zip` files in Git**. Instead, each workout is stored as an editable directory and GitHub Actions automatically builds the packages when changes are merged into `main`.
+Workout packages are **not stored as `.anhpt.zip` files in Git**. Instead, each workout is stored as an editable directory and GitHub Actions builds and publishes packages when an eligible pull request is merged into `main`.
 
 The AnhPT app reads the generated catalog from:
 
@@ -18,7 +18,7 @@ Example:
 
 ```text
 main/
-  daily-plank-1.0.0.anhpt/
+  daily-plank-1.0.0/
     workout.yaml
     manifest.json
     coach_recordings/
@@ -26,13 +26,13 @@ main/
     music/
       ...
 
-  mediation-before-sleep.anhpt/
+  mediation-before-sleep/
     workout.yaml
     manifest.json
     music/
       ...
 
-  bai-tap-dit-cua-tho-bay-mau.anhpt/
+  bai-tap-dit-cua-tho-bay-mau/
     workout.yaml
     manifest.json
 
@@ -106,7 +106,7 @@ Create a new directory under `main/`.
 For example:
 
 ```text
-main/morning-flow.anhpt/
+main/morning-flow/
   workout.yaml
   manifest.json
   music/
@@ -131,18 +131,46 @@ Do **not** manually create or commit an `.anhpt.zip` file.
 
 ## Automatic release flow
 
-Every push or merge to `main` runs:
+Releases are created from merged pull requests, not from every change to `main`.
+
+A new bucket release is created **only when a pull request is merged into `main` and its title starts with one of these prefixes:**
+
+```text
+feat:
+fix:
+```
+
+Examples that **create a release**:
+
+```text
+feat: add morning workout
+fix: correct squat timing
+```
+
+Examples that **do not create a release**:
+
+```text
+docs: update README
+chore: clean up repository
+refactor: simplify build script
+```
+
+Use `feat:` when the merged PR adds or changes workout content or another feature that should be published. Use `fix:` when the merged PR fixes published workout/package content and should produce a new release.
+
+Documentation, maintenance, refactoring, and other non-release changes should use another prefix such as `docs:`, `chore:`, or `refactor:`.
+
+The release workflow is:
 
 ```text
 .github/workflows/release-bucket.yml
 ```
 
-The workflow:
+For an eligible merged PR, the workflow:
 
-1. Checks out the repository.
+1. Checks out `main` after the PR has been merged.
 2. Sets up Python.
 3. Installs `PyYAML`.
-4. Creates a release tag such as:
+4. Creates a release tag and title such as:
 
 ```text
 bucket-42
@@ -288,9 +316,7 @@ To publish a new version of an existing workout, update:
 "version": "1.1.0"
 ```
 
-in its `manifest.json`, then commit and merge the change into `main`.
-
-GitHub Actions will build:
+in its `manifest.json` and create a pull request whose title starts with `feat:` or `fix:`. After that PR is merged into `main`, GitHub Actions will build:
 
 ```text
 <id>-1.1.0.anhpt.zip
