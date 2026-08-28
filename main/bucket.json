@@ -7,8 +7,8 @@
       "name": "Tập đít với chị Xô",
       "description": "Nếu ai hỏi mày tập cái này làm cái giề, thì trả lời là tập cho đít bự chứ làm gì nữa",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-3/bai-tap-dit-cua-tho-bay-mau-1.0.0.anhpt.zip",
-      "sha256": "f7fdbd61d14b300eba54c7cb6431d35d9704eae144be26c054685d2c759a38d7",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-6/bai-tap-dit-cua-tho-bay-mau-1.0.0.anhpt.zip",
+      "sha256": "0d56eb668d15efc338a2fb0a6a63040478e6a645e8027f9bed2f556436486b45",
       "size": 1501,
       "tags": [
         "funny",
@@ -19,12 +19,28 @@
       "minAppVersion": "0.8.2"
     },
     {
+      "id": "basic-sit-up",
+      "name": "Bài tập gập bụng cơ bản",
+      "description": "Bài tập gập bụng 12 lần giúp luyện cơ bụng với chân luôn duỗi thẳng và chuyển động có kiểm soát.",
+      "version": "1.0.0",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-6/basic-sit-up-1.0.0.anhpt.zip",
+      "sha256": "aa3ad648d3e49ceabbfbbf4fcf0391d2304488c9e69c5d8b25a0e2345c6591f5",
+      "size": 1263,
+      "tags": [
+        "abs",
+        "sit-up",
+        "core",
+        "beginner"
+      ],
+      "minAppVersion": "0.8.2"
+    },
+    {
       "id": "basic-squat",
       "name": "Bài tập Squat cơ bản",
       "description": "Bài tập Squat 10 lần giúp luyện cơ đùi và cơ mông, tập trung vào tư thế đúng và kiểm soát chuyển động.",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-3/basic-squat-1.0.0.anhpt.zip",
-      "sha256": "3666146dc6d4c761f6b22bfe5deb17aa3bae324321450f4824ddb837f17aee1b",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-6/basic-squat-1.0.0.anhpt.zip",
+      "sha256": "5a9a51749921036ca2795eac469e673903a4309865171a95cd61bcc2351210e6",
       "size": 1249,
       "tags": [
         "squat",
@@ -39,8 +55,8 @@
       "name": "Tập Plank mỗi ngày",
       "description": "Bài này nên tập đều đặn mỗi ngày để nâng cơ bụng",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-3/daily-plank-1.0.0.anhpt.zip",
-      "sha256": "f0931ce31ea2edf8e578a1c1f40c1e21c545723bf01a1c5b157a3315259ed83b",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-6/daily-plank-1.0.0.anhpt.zip",
+      "sha256": "d6028187be12640549a5bcba3197d9058c16e7ec5e7ea9614272b02dab60759f",
       "size": 4529406,
       "tags": [],
       "minAppVersion": "0.8.2"
@@ -50,8 +66,8 @@
       "name": "Thiền hơi thở trước khi ngủ",
       "description": "Bài thiền nhẹ nhàng giúp tập trung vào hơi thở, hít thở sâu, thả lỏng cơ thể và chuẩn bị cho một giấc ngủ yên. Hãy tập ở tư thế nằm hoặc ngồi thoải mái, trong không gian yên tĩnh.",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-3/meditation-before-sleep-1.0.0.anhpt.zip",
-      "sha256": "6a37cb4d1cbb259f7438518914b383cda9fdbf47af7d4d78980fcfff807b05d5",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-6/meditation-before-sleep-1.0.0.anhpt.zip",
+      "sha256": "af5b12bb3e47a16157195907d5b451d2253f730fbf149249296dd12217505ba6",
       "size": 20926625,
       "tags": [
         "meditation",
