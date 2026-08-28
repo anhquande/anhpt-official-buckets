@@ -22,10 +22,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Migrate legacy ZIP packages to editable source folders
-        shell: pwsh
-        run: ./scripts/Migrate-LegacyPackages.ps1
-
       - name: Choose release tag
         shell: bash
         run: echo "RELEASE_TAG=bucket-${GITHUB_RUN_NUMBER}" >> "$GITHUB_ENV"
