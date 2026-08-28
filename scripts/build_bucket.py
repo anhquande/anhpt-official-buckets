@@ -61,6 +61,25 @@ def package_directory(source_dir: Path, output_file: Path) -> None:
                 archive.write(path, path.relative_to(source_dir).as_posix())
 
 
+def existing_download_counts(bucket_path: Path) -> dict[str, int]:
+    if not bucket_path.is_file():
+        return {}
+    try:
+        bucket = json.loads(bucket_path.read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    workouts = bucket.get("workouts", []) if isinstance(bucket, dict) else []
+    counts = {}
+    for workout in workouts:
+        if not isinstance(workout, dict):
+            continue
+        workout_id = workout.get("id")
+        count = workout.get("downloadCount", 0)
+        if isinstance(workout_id, str) and isinstance(count, int) and count >= 0:
+            counts[workout_id] = count
+    return counts
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(
         description="Build AnhPT workout packages and main/bucket.json"
@@ -81,6 +100,8 @@ def main() -> int:
 
     if not source_root.is_dir():
         fail(f"Source directory not found: {source_root}")
+
+    download_counts = existing_download_counts(bucket_path)
 
     if output_root.exists():
         shutil.rmtree(output_root)
@@ -107,9 +128,7 @@ def main() -> int:
 
         package_id = str(require(manifest, "id", manifest_path))
         package_version = str(require(manifest, "version", manifest_path))
-        min_app_version = str(
-            require(manifest, "minAppVersion", manifest_path)
-        )
+        min_app_version = str(require(manifest, "minAppVersion", manifest_path))
 
         name = str(require(workout, "name", workout_path))
         description = str(workout.get("description") or "")
@@ -136,6 +155,7 @@ def main() -> int:
             "size": package_path.stat().st_size,
             "tags": [str(tag) for tag in tags],
             "minAppVersion": min_app_version,
+            "downloadCount": download_counts.get(package_id, 0),
         }
 
         if manifest.get("author"):
