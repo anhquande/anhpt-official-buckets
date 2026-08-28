@@ -1,0 +1,81 @@
+version: 2
+
+name: Bài tập Squat cơ bản
+description: Bài tập Squat 10 lần giúp luyện cơ đùi và cơ mông, tập trung vào tư thế đúng và kiểm soát chuyển động.
+
+tags:
+  - squat
+  - legs
+  - glutes
+  - beginner
+
+start_countdown: 3s
+
+voice:
+  language: vi
+  mode: combined
+  announce_every: 10s
+  countdown_from: 3s
+  announce_step_name: true
+  announce_start: true
+  announce_finish: true
+
+feedback:
+  sound: beep
+  haptic: medium
+
+audio:
+  ducking: medium
+
+steps:
+  - name: Chuẩn bị tư thế
+    id: chuan-bi
+    duration: 25s
+    countdown: false
+    guide: >
+      Đứng thẳng, hai chân rộng bằng vai. Hai mũi chân hơi chếch ra ngoài tạo thành hình chữ V.
+      Đầu gối hướng theo hướng của bàn chân. Giữ lưng thẳng và mắt nhìn về phía trước.
+      Chúng ta sẽ thực hiện 10 lần Squat.
+
+  - name: Hướng dẫn động tác
+    id: huong-dan
+    duration: 35s
+    countdown: false
+    guide: >
+      Từ từ đẩy hông ra phía sau và hạ người xuống. Giữ lưng thẳng, không cong lưng.
+      Hạ xuống cho đến khi phần đùi trên gần song song với sàn. Giữ tư thế ở dưới khoảng 3 giây.
+      Sau đó đứng thẳng lên và siết cơ mông. Trong suốt động tác, đầu gối luôn hướng theo bàn chân.
+
+  - name: Chuẩn bị bắt đầu
+    id: chuan-bi-bat-dau
+    duration: 10s
+    countdown: false
+    guide: >
+      Sẵn sàng nhé. Giữ lưng thẳng. Bắt đầu Squat.
+
+  - repeat: 10
+    steps:
+      - name: Hạ xuống
+        id: ha-xuong
+        duration: 6s
+        guide: >
+          Từ từ hạ xuống. Đẩy hông ra sau.
+
+      - name: Giữ tư thế
+        id: giu-tu-the
+        duration: 5s
+        guide: >
+          Giữ ở dưới. Hai, ba.
+
+      - name: Đứng lên
+        id: dung-len
+        duration: 5s
+        guide: >
+          Đứng lên. Siết mông.
+
+  - name: Hoàn thành
+    id: hoan-thanh
+    duration: 15s
+    countdown: false
+    guide: >
+      Hoàn thành 10 lần Squat. Thả lỏng hai chân và hít thở đều. Tốt lắm.

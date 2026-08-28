@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "workoutFile": "workout.yaml",
+  "id": "basic-squat",
+  "version": "1.0.0",
+  "minAppVersion": "0.8.2"
+}
