@@ -1,0 +1,76 @@
+version: 2
+
+name: Thiền hơi thở trước khi ngủ
+description: Bài thiền nhẹ nhàng giúp tập trung vào hơi thở, hít thở sâu, thả lỏng cơ thể và chuẩn bị cho một giấc ngủ yên. Hãy tập ở tư thế nằm hoặc ngồi thoải mái, trong không gian yên tĩnh.
+tags:
+  - meditation
+  - breathing
+  - relaxation
+  - sleep
+
+start_countdown: 3s
+
+voice:
+  language: vi
+  mode: ending
+  announce_every: 1m
+  countdown_from: 5s
+  announce_step_name: true
+  announce_start: false
+  announce_finish: true
+
+feedback:
+  sound: none
+  haptic: off
+
+audio:
+  ducking: low
+
+background_music:
+  source: music/Free Alpha Meditation Music-2.mp3
+  name: Free Alpha Meditation Music
+  volume: 0.35
+
+steps:
+  - name: Ổn định tư thế
+    duration: 1m
+    countdown: false
+    guide: >
+      Nhắm mắt lại. Đặt hai tay ở vị trí thoải mái. Cảm nhận cơ thể đang được nâng đỡ và cho phép mình tạm gác lại mọi việc trong ngày.
+  - name: Nhận biết hơi thở
+    duration: 2m
+    countdown: false
+    guide: >
+      Không cần thay đổi nhịp thở. Chỉ nhẹ nhàng cảm nhận luồng khí đi vào, đi ra và chuyển động tự nhiên của bụng.
+  - name: Hít thở sâu
+    countdown: false
+    guide: >
+      Bây giờ chúng ta sẽ hít vào bằng mũi trong bốn giây và thở ra thật chậm trong sáu giây. Không cần cố gắng nếu bạn cảm thấy khó chịu.
+  - repeat: 8
+    steps:
+      - name: Hít vào
+        duration: 4s
+        countdown: false
+      - name: Thở ra chậm
+        duration: 6s
+        countdown: false
+  - name: Trở về hơi thở tự nhiên
+    duration: 4m
+    countdown: false
+    guide: >
+      Để hơi thở trở lại nhịp tự nhiên. Mỗi khi tâm trí đi nơi khác, chỉ cần nhận ra điều đó rồi dịu dàng đưa sự chú ý trở về cảm giác đang thở.
+  - name: Thả lỏng toàn thân
+    duration: 3m
+    countdown: false
+    guide: >
+      Thả lỏng trán, hàm và hai vai. Làm mềm ngực và bụng. Buông lỏng hai bàn tay, hai chân và toàn bộ cơ thể theo mỗi lần thở ra.
+  - name: Buông ngày hôm nay
+    duration: 2m
+    countdown: false
+    guide: >
+      Không cần giải quyết thêm điều gì lúc này. Hít vào sự yên tĩnh. Thở ra mọi căng thẳng còn lại và cho phép cơ thể chìm sâu hơn vào nghỉ ngơi.
+  - name: Kết thúc nhẹ nhàng
+    duration: 1m
+    countdown: false
+    guide: >
+      Tiếp tục nằm yên và thở tự nhiên. Nếu đã sẵn sàng ngủ, bạn không cần mở mắt. Hãy để hơi thở đưa bạn vào một giấc ngủ bình an.

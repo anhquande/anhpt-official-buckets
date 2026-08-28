@@ -1,0 +1,112 @@
+version: 2
+
+name: Tập Plank mỗi ngày
+description: Bài này nên tập đều đặn mỗi ngày để nâng cơ bụng
+recording: coach_recordings/659e8aaaffd2a-176c376_1787789370149.m4a
+
+start_countdown: 3s
+
+voice:
+  language: vi
+  mode: combined
+  announce_every: 10s
+  countdown_from: 5s
+  announce_step_name: true
+  announce_start: true
+  announce_finish: true
+
+feedback:
+  sound: beep
+  haptic: medium
+
+audio:
+  ducking: medium
+
+background_music:
+  source: music/track_1787792034941750.mp3
+  name: Future House Music
+  volume: 0.049
+  ducking: very_high
+
+steps:
+  - name: Chuẩn bị
+    id: chuan-bi
+    countdown: false
+    guide: >
+      Đây là bài tập Plank nâng cơ bụng. Hãy trải thảm Yoga chống trượt. ngồi trên thảm và lắng nghe hướng dẫn của tôi
+    recording: coach_recordings/659e8aaaffd2a-176c376_1787786599608.m4a
+  - name: Khởi động
+    id: khoi-dong
+    countdown: false
+    guide: >
+      Trước khi bắt đầu, hãy làm nóng cơ thể và làm các khớp mềm mại hơn. Hãy ngồi thẳng lưng, chân xếp bằng tròn.
+    recording: coach_recordings/659e8aaaffd2a-176c376_1787774863625.m4a
+  - repeat: 5
+    steps:
+      - name: Nghiêng cổ qua trái
+        id: nghieng-co-qua-trai
+        countdown: false
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787774875825.m4a
+      - name: Nghiêng cổ qua phải
+        id: nghieng-co-qua-phai
+        countdown: false
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787774885815.m4a
+  - repeat: 5
+    steps:
+      - name: Gập cổ ra phía trước
+        id: gap-co-ra-phia-truoc
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787774896935.m4a
+      - name: Ngửa cổ ra phía sau
+        id: ngua-co-ra-phia-sau
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787774905637.m4a
+  - name: Gập cổ để cằm chạm ngực
+    id: gap-co-de-cam-cham-nguc
+    recording: coach_recordings/659e8aaaffd2a-176c376_1787774915890.m4a
+  - repeat: 5
+    steps:
+      - name: Lăn đầu qua trái
+        id: lan-dau-qua-trai
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787774929904.m4a
+      - name: Lăn đầu qua phải
+        id: lan-dau-qua-phai
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787774937434.m4a
+  - name: Hết phần tập cổ
+    id: het-phan-tap-co
+    guide: >
+      Bây giờ cơ cổ của bạn đã mềm. Hãy nằm sấp xuống và hai tay chống thảm, lưng giữ thẳng, chuẩn bị plank
+    recording: coach_recordings/659e8aaaffd2a-176c376_1787774948247.m4a
+  - repeat: 2
+    steps:
+      - name: Plank
+        id: plank
+        duration: 40s
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787774960682.m4a
+      - name: Nghỉ
+        id: nghi
+        duration: 20s
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787774975378.m4a
+  - name: Plank kết thúc
+    id: plank-ket-thuc
+    guide: >
+      Chúc mừng. Bạn đã hoàn thành phần Plank. Bây giờ hãy nằm ngửa và thư giãn.
+    recording: coach_recordings/659e8aaaffd2a-176c376_1787774986810.m4a
+  - repeat: 2
+    steps:
+      - name: Hít vào, bụng phình ra
+        id: hit-vao-bung-phinh-ra
+        duration: 5s
+        recording: coach_recordings/659e8aaaffd2a-176c376_1787775370242.m4a
+      - name: Giữ hơi thở trong 10 giây
+        duration: 10s
+      - name: Thở ra, bụng hóp lại
+        duration: 5s
+      - name: Nín thở trong 5 giây
+        duration: 5s
+  - name: Hoàn thành
+    id: hoan-thanh
+    guide: >
+      Bạn đã hoàn thành bài tập hôm nay. Xin hẹn ngày mai. Đừng quên uống nhiều nước.
+    recording: coach_recordings/659e8aaaffd2a-176c376_1787785958483.m4a
+  - name: Dọn dẹp
+    guide: >
+      Hey, nhớ gấp thảm Yoga vào đúng chỗ nha. See ya
