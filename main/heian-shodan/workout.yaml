@@ -1,0 +1,164 @@
+version: 2
+
+name: Heian Shodan – Karate Kata
+description: Bài tập hướng dẫn Heian Shodan theo từng động tác cơ bản, phù hợp để luyện chậm và ghi nhớ trình tự.
+
+tags:
+  - karate
+  - kata
+  - heian-shodan
+  - shotokan
+  - beginner
+
+start_countdown: 3s
+
+voice:
+  language: vi
+  mode: combined
+  announce_every: 10s
+  countdown_from: 3s
+  announce_step_name: true
+  announce_start: true
+  announce_finish: true
+
+feedback:
+  sound: beep
+  haptic: medium
+
+audio:
+  ducking: medium
+
+steps:
+  - name: Yoi – Chuẩn bị
+    id: yoi
+    duration: 12s
+    countdown: false
+    guide: >
+      Vào tư thế Yoi. Thả lỏng vai, giữ lưng thẳng, tập trung và chuẩn bị bắt đầu Heian Shodan.
+
+  - name: Trái – Gedan Barai
+    id: move-01
+    duration: 6s
+    guide: >
+      Quay sang trái. Bước chân trái vào Zenkutsu Dachi và thực hiện Gedan Barai tay trái.
+
+  - name: Tiến – Oi Zuki
+    id: move-02
+    duration: 6s
+    guide: >
+      Tiến chân phải và đấm Oi Zuki Chudan tay phải.
+
+  - name: Quay phải – Gedan Barai
+    id: move-03
+    duration: 7s
+    guide: >
+      Quay một trăm tám mươi độ sang phải. Vào Zenkutsu Dachi và Gedan Barai tay phải.
+
+  - name: Tiến – Oi Zuki
+    id: move-04
+    duration: 6s
+    guide: >
+      Tiến chân trái và đấm Oi Zuki Chudan tay trái.
+
+  - name: Quay trái – Gedan Barai
+    id: move-05
+    duration: 7s
+    guide: >
+      Quay chín mươi độ sang trái, hướng về phía trước. Gedan Barai tay trái.
+
+  - name: Tiến – Age Uke
+    id: move-06
+    duration: 6s
+    guide: >
+      Tiến chân phải và thực hiện Age Uke tay phải.
+
+  - name: Tiến – Age Uke
+    id: move-07
+    duration: 6s
+    guide: >
+      Tiến chân trái và thực hiện Age Uke tay trái.
+
+  - name: Tiến – Age Uke và Kiai
+    id: move-08
+    duration: 7s
+    guide: >
+      Tiến chân phải, Age Uke tay phải. Kiai mạnh ở cuối động tác.
+
+  - name: Quay trái – Gedan Barai
+    id: move-09
+    duration: 7s
+    guide: >
+      Quay hai trăm bảy mươi độ sang trái. Gedan Barai tay trái.
+
+  - name: Tiến – Oi Zuki
+    id: move-10
+    duration: 6s
+    guide: >
+      Tiến chân phải và Oi Zuki Chudan tay phải.
+
+  - name: Quay phải – Gedan Barai
+    id: move-11
+    duration: 7s
+    guide: >
+      Quay một trăm tám mươi độ sang phải. Gedan Barai tay phải.
+
+  - name: Tiến – Oi Zuki
+    id: move-12
+    duration: 6s
+    guide: >
+      Tiến chân trái và Oi Zuki Chudan tay trái.
+
+  - name: Quay trái – Gedan Barai
+    id: move-13
+    duration: 7s
+    guide: >
+      Quay chín mươi độ sang trái, hướng về phía trước. Gedan Barai tay trái.
+
+  - name: Tiến – Oi Zuki
+    id: move-14
+    duration: 6s
+    guide: >
+      Tiến chân phải và Oi Zuki Chudan tay phải.
+
+  - name: Tiến – Oi Zuki
+    id: move-15
+    duration: 6s
+    guide: >
+      Tiến chân trái và Oi Zuki Chudan tay trái.
+
+  - name: Tiến – Oi Zuki và Kiai
+    id: move-16
+    duration: 7s
+    guide: >
+      Tiến chân phải và Oi Zuki Chudan tay phải. Kiai mạnh ở cuối động tác.
+
+  - name: Quay trái – Gedan Barai
+    id: move-17
+    duration: 7s
+    guide: >
+      Quay hai trăm bảy mươi độ sang trái. Gedan Barai tay trái.
+
+  - name: Tiến chéo – Oi Zuki
+    id: move-18
+    duration: 6s
+    guide: >
+      Tiến chân phải theo hướng chéo và Oi Zuki Chudan tay phải.
+
+  - name: Quay phải – Gedan Barai
+    id: move-19
+    duration: 7s
+    guide: >
+      Quay một trăm ba mươi lăm độ sang phải. Gedan Barai tay phải.
+
+  - name: Tiến chéo – Oi Zuki
+    id: move-20
+    duration: 6s
+    guide: >
+      Tiến chân trái theo hướng chéo và Oi Zuki Chudan tay trái.
+
+  - name: Yame – Kết thúc
+    id: yame
+    duration: 12s
+    countdown: false
+    guide: >
+      Hoàn thành Heian Shodan. Trở về tư thế Yoi, hít thở đều và thả lỏng.
