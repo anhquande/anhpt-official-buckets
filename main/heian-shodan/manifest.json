@@ -1,0 +1,7 @@
+{
+  "schemaVersion": 1,
+  "workoutFile": "workout.yaml",
+  "id": "heian-shodan",
+  "version": "1.0.0",
+  "minAppVersion": "0.8.2"
+}
