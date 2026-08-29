@@ -49,7 +49,58 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def package_directory(source_dir: Path, output_file: Path) -> None:
+def media_type(path: str) -> str:
+    extension = Path(path).suffix.lower()
+    if extension == ".gif":
+        return "animation"
+    if extension in {".jpg", ".jpeg", ".png", ".webp"}:
+        return "image"
+    return "video"
+
+
+def demonstration_assets(workout_dir: Path, workout: dict) -> list[dict]:
+    assets = []
+    seen = set()
+    exercises = workout.get("exercises") or []
+    if not isinstance(exercises, list):
+        fail(f"{workout_dir / 'workout.yaml'}: exercises must be a list")
+
+    for raw_exercise in exercises:
+        if not isinstance(raw_exercise, dict):
+            continue
+        reference = raw_exercise.get("demo_media") or raw_exercise.get("demo_video")
+        if not isinstance(reference, str) or reference.startswith("sha256:"):
+            continue
+        normalized = reference.replace("\\", "/")
+        if normalized.startswith("/") or ".." in normalized.split("/"):
+            fail(f"Unsafe demonstration media path: {reference}")
+        if normalized in seen:
+            continue
+        media_path = workout_dir / normalized
+        if not media_path.is_file():
+            fail(f"Demonstration media not found: {media_path}")
+        digest = sha256(media_path)
+        assets.append({
+            "id": f"sha256:{digest}",
+            "reference": reference,
+            "type": media_type(reference),
+            "path": normalized,
+        })
+        seen.add(normalized)
+    return assets
+
+
+def package_directory(
+    source_dir: Path,
+    output_file: Path,
+    manifest: dict,
+    workout: dict,
+) -> None:
+    package_manifest = dict(manifest)
+    assets = demonstration_assets(source_dir, workout)
+    if assets:
+        package_manifest["assets"] = assets
+
     with zipfile.ZipFile(
         output_file,
         "w",
@@ -59,9 +110,13 @@ def package_directory(source_dir: Path, output_file: Path) -> None:
         for path in sorted(source_dir.rglob("*")):
             if not path.is_file():
                 continue
-            if path.name == "generate_media.py":
+            if path.name in {"generate_media.py", "manifest.json"}:
                 continue
             archive.write(path, path.relative_to(source_dir).as_posix())
+        archive.writestr(
+            "manifest.json",
+            json.dumps(package_manifest, ensure_ascii=False, indent=2) + "\n",
+        )
 
 
 def existing_download_counts(bucket_path: Path) -> dict[str, int]:
@@ -143,7 +198,7 @@ def main() -> int:
         package_path = output_root / package_name
 
         print(f"Building {package_name}")
-        package_directory(workout_dir, package_path)
+        package_directory(workout_dir, package_path, manifest, workout)
 
         entry = {
             "id": package_id,
