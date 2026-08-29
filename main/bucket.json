@@ -16,7 +16,8 @@
         "squat",
         "daily"
       ],
-      "minAppVersion": "0.8.2"
+      "minAppVersion": "0.8.2",
+      "downloadCount": 0
     },
     {
       "id": "basic-sit-up",
@@ -32,7 +33,8 @@
         "core",
         "beginner"
       ],
-      "minAppVersion": "0.8.2"
+      "minAppVersion": "0.8.2",
+      "downloadCount": 1
     },
     {
       "id": "basic-squat",
@@ -48,7 +50,8 @@
         "glutes",
         "beginner"
       ],
-      "minAppVersion": "0.8.2"
+      "minAppVersion": "0.8.2",
+      "downloadCount": 1
     },
     {
       "id": "daily-plank",
@@ -59,7 +62,8 @@
       "sha256": "d6028187be12640549a5bcba3197d9058c16e7ec5e7ea9614272b02dab60759f",
       "size": 4529406,
       "tags": [],
-      "minAppVersion": "0.8.2"
+      "minAppVersion": "0.8.2",
+      "downloadCount": 9
     },
     {
       "id": "meditation-before-sleep",
@@ -75,7 +79,8 @@
         "relaxation",
         "sleep"
       ],
-      "minAppVersion": "0.8.2"
+      "minAppVersion": "0.8.2",
+      "downloadCount": 0
     }
   ]
 }
