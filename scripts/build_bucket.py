@@ -57,8 +57,11 @@ def package_directory(source_dir: Path, output_file: Path) -> None:
         compresslevel=9,
     ) as archive:
         for path in sorted(source_dir.rglob("*")):
-            if path.is_file():
-                archive.write(path, path.relative_to(source_dir).as_posix())
+            if not path.is_file():
+                continue
+            if path.name == "generate_media.py":
+                continue
+            archive.write(path, path.relative_to(source_dir).as_posix())
 
 
 def existing_download_counts(bucket_path: Path) -> dict[str, int]:
