@@ -17,7 +17,7 @@
         "daily"
       ],
       "minAppVersion": "0.8.2",
-      "downloadCount": 1
+      "downloadCount": 3
     },
     {
       "id": "basic-sit-up",
@@ -98,7 +98,7 @@
         "sleep"
       ],
       "minAppVersion": "0.8.2",
-      "downloadCount": 0
+      "downloadCount": 1
     }
   ]
 }
