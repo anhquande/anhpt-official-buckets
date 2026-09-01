@@ -14,9 +14,12 @@ start_countdown: 3s
 
 voice:
   language: en
-  mode: combined
-  announce_every: 10s
-  countdown_from: 3s
+  timing:
+    elapsed_time: false
+    interval: true
+    interval_every: 10s
+    final_countdown: true
+    countdown_from: 3s
   announce_step_name: true
   announce_start: true
   announce_finish: true
