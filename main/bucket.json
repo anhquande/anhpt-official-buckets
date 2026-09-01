@@ -3,12 +3,30 @@
   "name": "AnhPT Official Workouts",
   "workouts": [
     {
+      "id": "anhpt-feature-demo",
+      "name": "AnhPT Feature Demo",
+      "description": "A short interactive workout that demonstrates voice guidance, camera comparison, video layouts, pause/resume, progress and repeat steps.",
+      "version": "1.0.0",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-13/anhpt-feature-demo-1.0.0.anhpt.zip",
+      "sha256": "ccf328fcacbd8f3532916665bcabb655f12fe1b95a9395da70348305b5b44fa5",
+      "size": 9760,
+      "tags": [
+        "demo",
+        "beginner",
+        "full-body",
+        "camera",
+        "tutorial"
+      ],
+      "minAppVersion": "0.14.0",
+      "downloadCount": 0
+    },
+    {
       "id": "bai-tap-dit-cua-tho-bay-mau",
       "name": "Tập đít với chị Xô",
       "description": "Nếu ai hỏi mày tập cái này làm cái giề, thì trả lời là tập cho đít bự chứ làm gì nữa",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-12/bai-tap-dit-cua-tho-bay-mau-1.0.0.anhpt.zip",
-      "sha256": "aca1b661d74fda3b340e19e9839d4084a1e61388c7e3e282f0a053c5c2b55087",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-13/bai-tap-dit-cua-tho-bay-mau-1.0.0.anhpt.zip",
+      "sha256": "3da865d763cb4532287f250f3c4c5bbf031e536537ca54d1221f47aeae9368f3",
       "size": 1501,
       "tags": [
         "funny",
@@ -24,8 +42,8 @@
       "name": "Bài tập gập bụng cơ bản",
       "description": "Bài tập gập bụng 12 lần giúp luyện cơ bụng với chân luôn duỗi thẳng và chuyển động có kiểm soát.",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-12/basic-sit-up-1.0.0.anhpt.zip",
-      "sha256": "8ff72c69904db1af671bb3760733035333a44e82eed8778fdb850d6b1ecef65f",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-13/basic-sit-up-1.0.0.anhpt.zip",
+      "sha256": "fecc2ae3a51a69b98b21fcfdc4639439536821cc900fc0bdfd56f19af3aff409",
       "size": 1263,
       "tags": [
         "abs",
@@ -41,8 +59,8 @@
       "name": "Bài tập Squat cơ bản",
       "description": "Bài tập Squat 10 lần giúp luyện cơ đùi và cơ mông, tập trung vào tư thế đúng và kiểm soát chuyển động.",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-12/basic-squat-1.0.0.anhpt.zip",
-      "sha256": "201979b9445b97f0e3e4dadcd26fbccb6529a2311e80529074bed5ee51a21640",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-13/basic-squat-1.0.0.anhpt.zip",
+      "sha256": "f7362a37fd98e0f61ad6b3c0b39ab04a0acb720bce2f89e593db4ed7f197c4c5",
       "size": 1249,
       "tags": [
         "squat",
@@ -58,8 +76,8 @@
       "name": "Tập Plank mỗi ngày",
       "description": "Bài này nên tập đều đặn mỗi ngày để nâng cơ bụng",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-12/daily-plank-1.0.0.anhpt.zip",
-      "sha256": "41f7946697af9027a9b4a7a890604296415d12ce56e4ce0698f16ba9c64978be",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-13/daily-plank-1.0.0.anhpt.zip",
+      "sha256": "6bdf716543f35d86f7a28bf493ff316340c503fb5abc96fadab475645f4d096c",
       "size": 4529406,
       "tags": [],
       "minAppVersion": "0.8.2",
@@ -70,8 +88,8 @@
       "name": "Heian Shodan – Karate Kata",
       "description": "Bài tập hướng dẫn Heian Shodan theo từng động tác cơ bản, phù hợp để luyện chậm và ghi nhớ trình tự.",
       "version": "1.0.3",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-12/heian-shodan-1.0.3.anhpt.zip",
-      "sha256": "0d75ed1f9f69ebd35767151ec03dc59e741ab69c63ab9a88c836f4adc9cce8ee",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-13/heian-shodan-1.0.3.anhpt.zip",
+      "sha256": "744687456e528af08136b7b73a77b27a8323ff81303be7e34537eef296675290",
       "size": 12723,
       "tags": [
         "karate",
@@ -88,8 +106,8 @@
       "name": "Thiền hơi thở trước khi ngủ",
       "description": "Bài thiền nhẹ nhàng giúp tập trung vào hơi thở, hít thở sâu, thả lỏng cơ thể và chuẩn bị cho một giấc ngủ yên. Hãy tập ở tư thế nằm hoặc ngồi thoải mái, trong không gian yên tĩnh.",
       "version": "1.0.0",
-      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-12/meditation-before-sleep-1.0.0.anhpt.zip",
-      "sha256": "81db0e37e7778abb38f26f0432ed827b9b2726998d742f0d39bbb941308c01a1",
+      "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-13/meditation-before-sleep-1.0.0.anhpt.zip",
+      "sha256": "411235e8079273741e87c0ad8b0e2bd33a1e58e1bbee33cf6794dab20f2f09a5",
       "size": 20926625,
       "tags": [
         "meditation",
