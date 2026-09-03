@@ -88,16 +88,16 @@ jobs:
 
           echo "RELEASE_SHA=$(git rev-parse HEAD)" >> "$GITHUB_ENV"
 
-      - name: Create GitHub Release and upload packages
+      - name: Create GitHub Release and upload artifacts
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           shopt -s nullglob
-          assets=(dist/*.anhpt.zip)
+          assets=(dist/*.workout.yaml dist/*.assets.zip)
 
           if [ ${#assets[@]} -eq 0 ]; then
-            echo "No .anhpt.zip assets were built" >&2
+            echo "No split workout artifacts were built" >&2
             exit 1
           fi
 

@@ -1,5 +1,6 @@
 # AnhPT build artifacts
-*.anhpt.zip
+*.workout.yaml
+*.assets.zip
 dist/
 build/
 tmp/

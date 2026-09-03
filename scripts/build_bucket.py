@@ -90,11 +90,12 @@ def demonstration_assets(workout_dir: Path, workout: dict) -> list[dict]:
     return assets
 
 
-def package_directory(
+def package_assets(
     source_dir: Path,
     output_file: Path,
     manifest: dict,
     workout: dict,
+    workout_file: str,
 ) -> None:
     package_manifest = dict(manifest)
     assets = demonstration_assets(source_dir, workout)
@@ -110,9 +111,10 @@ def package_directory(
         for path in sorted(source_dir.rglob("*")):
             if not path.is_file():
                 continue
-            if path.name in {"generate_media.py", "manifest.json"}:
+            relative = path.relative_to(source_dir).as_posix()
+            if path.name in {"generate_media.py", "manifest.json"} or relative == workout_file:
                 continue
-            archive.write(path, path.relative_to(source_dir).as_posix())
+            archive.write(path, relative)
         archive.writestr(
             "manifest.json",
             json.dumps(package_manifest, ensure_ascii=False, indent=2) + "\n",
@@ -194,23 +196,38 @@ def main() -> int:
         if not isinstance(tags, list):
             fail(f"{workout_path}: tags must be a list")
 
-        package_name = f"{package_id}-{package_version}.anhpt.zip"
-        package_path = output_root / package_name
+        artifact_stem = f"{package_id}-{package_version}"
+        workout_name = f"{artifact_stem}.workout.yaml"
+        assets_name = f"{artifact_stem}.assets.zip"
+        workout_output_path = output_root / workout_name
+        assets_output_path = output_root / assets_name
 
-        print(f"Building {package_name}")
-        package_directory(workout_dir, package_path, manifest, workout)
+        print(f"Building {workout_name} and {assets_name}")
+        shutil.copyfile(workout_path, workout_output_path)
+        package_assets(
+            workout_dir,
+            assets_output_path,
+            manifest,
+            workout,
+            workout_file,
+        )
+
+        release_base = (
+            f"https://github.com/{args.repository}/releases/download/"
+            f"{args.release_tag}"
+        )
 
         entry = {
             "id": package_id,
             "name": name,
             "description": description,
             "version": package_version,
-            "packageUrl": (
-                f"https://github.com/{args.repository}/releases/download/"
-                f"{args.release_tag}/{package_name}"
-            ),
-            "sha256": sha256(package_path),
-            "size": package_path.stat().st_size,
+            "workoutUrl": f"{release_base}/{workout_name}",
+            "workoutSha256": sha256(workout_output_path),
+            "workoutSize": workout_output_path.stat().st_size,
+            "assetsUrl": f"{release_base}/{assets_name}",
+            "assetsSha256": sha256(assets_output_path),
+            "assetsSize": assets_output_path.stat().st_size,
             "tags": [str(tag) for tag in tags],
             "minAppVersion": min_app_version,
             "downloadCount": download_counts.get(package_id, 0),
@@ -229,7 +246,7 @@ def main() -> int:
         fail("Duplicate workout id found in manifests")
 
     bucket = {
-        "schemaVersion": 1,
+        "schemaVersion": 2,
         "name": "AnhPT Official Workouts",
         "workouts": sorted(entries, key=lambda item: item["id"]),
     }
@@ -240,8 +257,8 @@ def main() -> int:
     )
 
     print(f"Generated {bucket_path}")
-    for package in sorted(output_root.glob("*.anhpt.zip")):
-        print(f"Generated {package}")
+    for artifact in sorted(output_root.iterdir()):
+        print(f"Generated {artifact}")
 
     return 0
 

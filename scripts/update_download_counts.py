@@ -41,7 +41,7 @@ def fetch_releases(repository: str, token: str | None) -> list[dict]:
 
 
 def match_workout_id(asset_name: str, workout_ids: list[str]) -> str | None:
-    if not asset_name.endswith(".anhpt.zip"):
+    if not asset_name.endswith(".workout.yaml"):
         return None
     matches = [
         workout_id
