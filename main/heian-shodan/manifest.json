@@ -3,5 +3,15 @@
   "workoutFile": "workout.yaml",
   "id": "heian-shodan",
   "version": "1.0.3",
-  "minAppVersion": "0.8.2"
+  "minAppVersion": "0.8.2",
+  "author": "AnhPT Official",
+  "authorVerified": true,
+  "difficulty": "Beginner",
+  "intensity": "Moderate",
+  "equipment": [],
+  "space": "Open area for kata movement",
+  "benefits": [
+    "Memorize the Heian Shodan sequence",
+    "Practice stance, direction, and controlled technique"
+  ]
 }

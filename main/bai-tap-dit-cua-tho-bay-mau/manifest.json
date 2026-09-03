@@ -3,5 +3,15 @@
   "workoutFile": "workout.yaml",
   "id": "bai-tap-dit-cua-tho-bay-mau",
   "version": "1.0.0",
-  "minAppVersion": "0.8.2"
+  "minAppVersion": "0.8.2",
+  "author": "AnhPT Official",
+  "authorVerified": true,
+  "difficulty": "Beginner",
+  "intensity": "Moderate",
+  "equipment": [],
+  "space": "Enough room to squat and lie down",
+  "benefits": [
+    "Activate glutes and legs",
+    "Make daily lower-body training more playful"
+  ]
 }

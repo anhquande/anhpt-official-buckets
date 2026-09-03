@@ -3,5 +3,15 @@
   "workoutFile": "workout.yaml",
   "id": "anhpt-feature-demo",
   "version": "1.0.0",
-  "minAppVersion": "0.14.0"
+  "minAppVersion": "0.14.0",
+  "author": "AnhPT Official",
+  "authorVerified": true,
+  "difficulty": "Beginner",
+  "intensity": "Moderate",
+  "equipment": [],
+  "space": "Small workout area",
+  "benefits": [
+    "Explore voice guidance and visual demonstrations",
+    "Try a balanced mix of strength, rest, and movement"
+  ]
 }

@@ -3,5 +3,15 @@
   "workoutFile": "workout.yaml",
   "id": "basic-sit-up",
   "version": "1.0.0",
-  "minAppVersion": "0.8.2"
+  "minAppVersion": "0.8.2",
+  "author": "AnhPT Official",
+  "authorVerified": true,
+  "difficulty": "Beginner",
+  "intensity": "Moderate",
+  "equipment": ["Exercise mat"],
+  "space": "Space to lie down",
+  "benefits": [
+    "Build foundational abdominal strength",
+    "Practice controlled sit-up technique"
+  ]
 }
