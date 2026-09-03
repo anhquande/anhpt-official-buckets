@@ -2,7 +2,7 @@
 
 This repository contains the editable source files for the official AnhPT workout catalog.
 
-Workout packages are **not stored as `.anhpt.zip` files in Git**. Instead, each workout is stored as an editable directory and GitHub Actions builds and publishes packages when an eligible pull request is merged into `main`.
+Release artifacts are **not stored in Git**. Each workout is stored as an editable directory and GitHub Actions publishes two independent files when an eligible pull request is merged: a small `.workout.yaml` definition and an `.assets.zip` containing its audio, video, and images.
 
 The AnhPT app reads the generated catalog from:
 
@@ -127,7 +127,7 @@ Then create `manifest.json`:
 }
 ```
 
-Do **not** manually create or commit an `.anhpt.zip` file.
+Do **not** manually create or commit generated `.workout.yaml` or `.assets.zip` files.
 
 ## Automatic release flow
 
@@ -187,24 +187,25 @@ python scripts/build_bucket.py \
 6. Scans the workout directories under `main/`.
 7. Reads package metadata from `manifest.json`.
 8. Reads `name`, `description`, and `tags` from `workout.yaml`.
-9. Builds one `.anhpt.zip` package for each workout.
-10. Calculates SHA-256 and package size.
+9. Builds one `.workout.yaml` definition and one `.assets.zip` archive for each workout.
+10. Calculates independent SHA-256 values and sizes for both artifacts.
 11. Regenerates `main/bucket.json`.
 12. Commits the generated `bucket.json` back to `main` when it changed.
 13. Creates a GitHub Release.
-14. Uploads all generated `.anhpt.zip` packages as release assets.
+14. Uploads all generated `.workout.yaml` and `.assets.zip` files as release assets.
 
 The generated ZIP files are build artifacts and are never committed to the repository.
 
-## Generated package
+## Generated artifacts
 
-A generated package contains the complete workout directory.
+Each workout produces two independently downloadable artifacts.
 
 Example:
 
 ```text
-daily-plank-1.0.0.anhpt.zip
-  workout.yaml
+daily-plank-1.0.0.workout.yaml
+
+daily-plank-1.0.0.assets.zip
   manifest.json
   coach_recordings/
     ...
@@ -212,16 +213,18 @@ daily-plank-1.0.0.anhpt.zip
     ...
 ```
 
-The package filename is generated from:
+The artifact filenames are generated from:
 
 ```text
-<manifest.id>-<manifest.version>.anhpt.zip
+<manifest.id>-<manifest.version>.workout.yaml
+<manifest.id>-<manifest.version>.assets.zip
 ```
 
 For example:
 
 ```text
-daily-plank-1.0.0.anhpt.zip
+daily-plank-1.0.0.workout.yaml
+daily-plank-1.0.0.assets.zip
 ```
 
 ## Generated bucket catalog
@@ -236,9 +239,12 @@ Example entry:
   "name": "Tập Plank mỗi ngày",
   "description": "Bài này nên tập đều đặn mỗi ngày để nâng cơ bụng",
   "version": "1.0.0",
-  "packageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-42/daily-plank-1.0.0.anhpt.zip",
-  "sha256": "...",
-  "size": 4535675,
+  "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-42/daily-plank-1.0.0.workout.yaml",
+  "workoutSha256": "...",
+  "workoutSize": 3985,
+  "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-42/daily-plank-1.0.0.assets.zip",
+  "assetsSha256": "...",
+  "assetsSize": 4531690,
   "tags": [
     "core",
     "plank",
@@ -250,9 +256,8 @@ Example entry:
 
 The following values are calculated automatically during the build:
 
-* `packageUrl`
-* `sha256`
-* `size`
+* `workoutUrl`, `workoutSha256`, `workoutSize`
+* `assetsUrl`, `assetsSha256`, `assetsSize`
 
 These values should not be maintained manually.
 
@@ -266,7 +271,7 @@ Install the build dependency:
 python -m pip install PyYAML
 ```
 
-Build the packages locally:
+Build the artifacts locally:
 
 ```bash
 python scripts/build_bucket.py --release-tag local-test
@@ -280,7 +285,7 @@ python scripts/build_bucket.py \
   --repository anhquande/anhpt-official-buckets
 ```
 
-The generated packages will be written to:
+The generated artifacts will be written to:
 
 ```text
 dist/
@@ -290,21 +295,23 @@ For example:
 
 ```text
 dist/
-  daily-plank-1.0.0.anhpt.zip
-  meditation-before-sleep-1.0.0.anhpt.zip
-  bai-tap-dit-cua-tho-bay-mau-1.0.0.anhpt.zip
+  daily-plank-1.0.0.workout.yaml
+  daily-plank-1.0.0.assets.zip
+  meditation-before-sleep-1.0.0.workout.yaml
+  meditation-before-sleep-1.0.0.assets.zip
 ```
 
 `main/bucket.json` will also be regenerated.
 
 ## Git ignore
 
-Generated packages and build output should not be committed.
+Generated artifacts and build output should not be committed.
 
 The repository therefore ignores:
 
 ```text
-*.anhpt.zip
+*.workout.yaml
+*.assets.zip
 dist/
 ```
 
@@ -319,7 +326,8 @@ To publish a new version of an existing workout, update:
 in its `manifest.json` and create a pull request whose title starts with `feat:` or `fix:`. After that PR is merged into `main`, GitHub Actions will build:
 
 ```text
-<id>-1.1.0.anhpt.zip
+<id>-1.1.0.workout.yaml
+<id>-1.1.0.assets.zip
 ```
 
 and publish it in the next bucket release.
