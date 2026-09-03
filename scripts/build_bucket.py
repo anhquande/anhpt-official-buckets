@@ -58,6 +58,29 @@ def media_type(path: str) -> str:
     return "video"
 
 
+def artwork_category(tags: list) -> str:
+    first_tag = str(tags[0]).strip().lower() if tags else ""
+    categories = {
+        "yoga": "yoga",
+        "yogo": "yoga",
+        "mobility": "yoga",
+        "hiit": "hiit",
+        "cardio": "hiit",
+        "meditation": "meditation",
+        "mediation": "meditation",
+        "thiền": "meditation",
+        "thien": "meditation",
+        "breathing": "meditation",
+        "tabata": "tabata",
+        "interval": "tabata",
+        "karate": "martial-arts",
+        "martial": "martial-arts",
+        "martial-arts": "martial-arts",
+        "kata": "martial-arts",
+    }
+    return categories.get(first_tag, "strength")
+
+
 def demonstration_assets(workout_dir: Path, workout: dict) -> list[dict]:
     assets = []
     seen = set()
@@ -96,6 +119,7 @@ def package_assets(
     manifest: dict,
     workout: dict,
     workout_file: str,
+    excluded_files: set[str],
 ) -> None:
     package_manifest = dict(manifest)
     assets = demonstration_assets(source_dir, workout)
@@ -112,7 +136,11 @@ def package_assets(
             if not path.is_file():
                 continue
             relative = path.relative_to(source_dir).as_posix()
-            if path.name in {"generate_media.py", "manifest.json"} or relative == workout_file:
+            if (
+                path.name in {"generate_media.py", "manifest.json"}
+                or relative == workout_file
+                or relative in excluded_files
+            ):
                 continue
             archive.write(path, relative)
         archive.writestr(
@@ -199,6 +227,31 @@ def main() -> int:
         artifact_stem = f"{package_id}-{package_version}"
         workout_name = f"{artifact_stem}.workout.yaml"
         assets_name = f"{artifact_stem}.assets.zip"
+        category = artwork_category(tags)
+        custom_artwork = {
+            "thumbnail": manifest.get("thumbnailFile"),
+            "featureImage": manifest.get("featureImageFile"),
+        }
+        artwork_sources = {}
+        excluded_files = set()
+        for artwork, configured in custom_artwork.items():
+            relative = str(configured) if configured else None
+            if relative is None:
+                folder = "thumbnail" if artwork == "thumbnail" else "feature"
+                artwork_sources[artwork] = (
+                    repo_root / "defaults" / "workout_artwork" / folder / f"{category}.webp"
+                )
+                continue
+            normalized = relative.replace("\\", "/")
+            if normalized.startswith("/") or ".." in normalized.split("/"):
+                fail(f"Unsafe {artwork} path: {relative}")
+            source = workout_dir / normalized
+            if not source.is_file():
+                fail(f"{artwork} file not found: {source}")
+            if source.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
+                fail(f"{artwork} must be a JPG, PNG, or WebP image: {source}")
+            artwork_sources[artwork] = source
+            excluded_files.add(normalized)
         workout_output_path = output_root / workout_name
         assets_output_path = output_root / assets_name
 
@@ -210,6 +263,7 @@ def main() -> int:
             manifest,
             workout,
             workout_file,
+            excluded_files,
         )
 
         release_base = (
@@ -235,6 +289,17 @@ def main() -> int:
 
         if manifest.get("author"):
             entry["author"] = str(manifest["author"])
+
+        for artwork, source in artwork_sources.items():
+            if not source.is_file():
+                fail(f"Default {artwork} file not found: {source}")
+            suffix = source.suffix.lower()
+            artwork_name = f"{artifact_stem}.{artwork}{suffix}"
+            artwork_output = output_root / artwork_name
+            shutil.copyfile(source, artwork_output)
+            entry[f"{artwork}Url"] = f"{release_base}/{artwork_name}"
+            entry[f"{artwork}Sha256"] = sha256(artwork_output)
+            entry[f"{artwork}Size"] = artwork_output.stat().st_size
 
         entries.append(entry)
 

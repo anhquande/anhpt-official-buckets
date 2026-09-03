@@ -2,7 +2,7 @@
 
 This repository contains the editable source files for the official AnhPT workout catalog.
 
-Release artifacts are **not stored in Git**. Each workout is stored as an editable directory and GitHub Actions publishes two independent files when an eligible pull request is merged: a small `.workout.yaml` definition and an `.assets.zip` containing its audio, video, and images.
+Release artifacts are **not stored in Git**. Each workout is stored as an editable directory and GitHub Actions publishes independent workout YAML, media ZIP, thumbnail, and feature-image files when an eligible pull request is merged. Custom artwork is optional; the build uses category artwork selected only by the first workout tag when custom files are absent.
 
 The AnhPT app reads the generated catalog from:
 
@@ -85,7 +85,9 @@ Example:
   "workoutFile": "workout.yaml",
   "id": "daily-plank",
   "version": "1.0.0",
-  "minAppVersion": "0.8.2"
+  "minAppVersion": "0.8.2",
+  "thumbnailFile": "artwork/thumbnail.webp",
+  "featureImageFile": "artwork/feature.webp"
 }
 ```
 
@@ -96,6 +98,8 @@ Fields:
 * `id` — stable workout identifier used in `bucket.json`.
 * `version` — package version.
 * `minAppVersion` — minimum AnhPT application version required to install the workout.
+* `thumbnailFile` — optional small list-card image.
+* `featureImageFile` — optional larger workout-detail background image.
 
 The package version is intentionally stored separately from the workout YAML schema version.
 
@@ -187,18 +191,18 @@ python scripts/build_bucket.py \
 6. Scans the workout directories under `main/`.
 7. Reads package metadata from `manifest.json`.
 8. Reads `name`, `description`, and `tags` from `workout.yaml`.
-9. Builds one `.workout.yaml` definition and one `.assets.zip` archive for each workout.
-10. Calculates independent SHA-256 values and sizes for both artifacts.
+9. Builds one `.workout.yaml` definition and one `.assets.zip` archive for each workout, plus optional thumbnail and feature-image artifacts.
+10. Calculates independent SHA-256 values and sizes for every artifact.
 11. Regenerates `main/bucket.json`.
 12. Commits the generated `bucket.json` back to `main` when it changed.
 13. Creates a GitHub Release.
-14. Uploads all generated `.workout.yaml` and `.assets.zip` files as release assets.
+14. Uploads all generated workout, media, thumbnail, and feature-image files as release assets.
 
 The generated ZIP files are build artifacts and are never committed to the repository.
 
 ## Generated artifacts
 
-Each workout produces two independently downloadable artifacts.
+Each workout produces two required artifacts and up to two optional artwork artifacts.
 
 Example:
 
@@ -209,6 +213,9 @@ daily-plank-1.0.0.assets.zip
   manifest.json
   coach_recordings/
     ...
+
+daily-plank-1.0.0.thumbnail.webp
+daily-plank-1.0.0.featureImage.webp
   music/
     ...
 ```
@@ -245,6 +252,12 @@ Example entry:
   "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-42/daily-plank-1.0.0.assets.zip",
   "assetsSha256": "...",
   "assetsSize": 4531690,
+  "thumbnailUrl": "https://github.com/.../daily-plank-1.0.0.thumbnail.webp",
+  "thumbnailSha256": "...",
+  "thumbnailSize": 11372,
+  "featureImageUrl": "https://github.com/.../daily-plank-1.0.0.featureImage.webp",
+  "featureImageSha256": "...",
+  "featureImageSize": 73780,
   "tags": [
     "core",
     "plank",
@@ -258,6 +271,8 @@ The following values are calculated automatically during the build:
 
 * `workoutUrl`, `workoutSha256`, `workoutSize`
 * `assetsUrl`, `assetsSha256`, `assetsSize`
+* optional `thumbnailUrl`, `thumbnailSha256`, `thumbnailSize`
+* optional `featureImageUrl`, `featureImageSha256`, `featureImageSize`
 
 These values should not be maintained manually.
 
