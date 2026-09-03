@@ -7,12 +7,12 @@
       "name": "AnhPT Feature Demo",
       "description": "A short interactive workout that demonstrates voice guidance, camera comparison, video layouts, pause/resume, progress and repeat steps.",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/anhpt-feature-demo-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/anhpt-feature-demo-1.0.0.workout.yaml",
       "workoutSha256": "74240c8212ef779432dac3306b0fa99d7ec3d65ce7bca862445dbd3973dea96d",
       "workoutSize": 2077,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/anhpt-feature-demo-1.0.0.assets.zip",
-      "assetsSha256": "156227e38b1045fa51496a81dbba3a381fab31506822a813daaae2bb09368a95",
-      "assetsSize": 8863,
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/anhpt-feature-demo-1.0.0.assets.zip",
+      "assetsSha256": "e3d3eea0335dea996d88cd1588427bfdf1894dc7e20d1ddfd6b27ab4d36ff50f",
+      "assetsSize": 9030,
       "tags": [
         "demo",
         "beginner",
@@ -20,12 +20,55 @@
         "camera",
         "tutorial"
       ],
+      "durationSeconds": 130,
+      "stepCount": 6,
+      "stepPreview": [
+        {
+          "name": "Welcome",
+          "durationSeconds": 15,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Squat",
+          "durationSeconds": 30,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Rest",
+          "durationSeconds": 15,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "High Plank",
+          "durationSeconds": 30,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Squat Repeat",
+          "durationSeconds": 20,
+          "hasGuide": true,
+          "hasMedia": false
+        }
+      ],
       "minAppVersion": "0.14.0",
       "downloadCount": 0,
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/anhpt-feature-demo-1.0.0.thumbnail.webp",
+      "author": "AnhPT Official",
+      "difficulty": "Beginner",
+      "intensity": "Moderate",
+      "space": "Small workout area",
+      "authorVerified": true,
+      "benefits": [
+        "Explore voice guidance and visual demonstrations",
+        "Try a balanced mix of strength, rest, and movement"
+      ],
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/anhpt-feature-demo-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/anhpt-feature-demo-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/anhpt-feature-demo-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -34,24 +77,157 @@
       "name": "Tập đít với chị Xô",
       "description": "Nếu ai hỏi mày tập cái này làm cái giề, thì trả lời là tập cho đít bự chứ làm gì nữa",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/bai-tap-dit-cua-tho-bay-mau-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/bai-tap-dit-cua-tho-bay-mau-1.0.0.workout.yaml",
       "workoutSha256": "a94d8e7e9d99102aeb28578357eb8c727378189dd3090d1660e0c706af94e9c8",
       "workoutSize": 2939,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/bai-tap-dit-cua-tho-bay-mau-1.0.0.assets.zip",
-      "assetsSha256": "3b673bf45df9e709c722a7ef819e169f615afb15d22ba5e1f02813db40fcea5b",
-      "assetsSize": 235,
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/bai-tap-dit-cua-tho-bay-mau-1.0.0.assets.zip",
+      "assetsSha256": "54450dd50563c0a515e137dac89243d860c91f13c997e7b7f5ccb7a47556c593",
+      "assetsSize": 393,
       "tags": [
         "funny",
         "mong",
         "squat",
         "daily"
       ],
+      "durationSeconds": 365,
+      "stepCount": 84,
+      "stepPreview": [
+        {
+          "name": "Ê Thỏ, dậy tập đít đi mầy",
+          "durationSeconds": 10,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Giờ thì ngoáy mông 5 cái",
+          "durationSeconds": 10,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Cúi người ra phía trước",
+          "durationSeconds": 2,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Ngoáy sang trái",
+          "durationSeconds": 2,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Ngoáy sang phải",
+          "durationSeconds": 2,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Giựt giựt cái mông lên trên",
+          "durationSeconds": 2,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Gồi đó. Giờ thì squat nhổ cà rốt",
+          "durationSeconds": 10,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Cúi xuống",
+          "durationSeconds": 3,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Giơ hai tay ra trước, hai tay nắm chặt vào nhau",
+          "durationSeconds": 3,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Nhổ từ từ lên",
+          "durationSeconds": 3,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Rồi đó, giờ lại tiếp ...",
+          "durationSeconds": 3,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Squad phê không mầy. Giờ muốn mông to thì phải vỗ mông",
+          "durationSeconds": 10,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Vỗ mông 1 cái",
+          "durationSeconds": 2,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Vỗ mông 2 cái",
+          "durationSeconds": 2,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "rồi lại",
+          "durationSeconds": 1,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Bây giờ thì nằm sấp xuống",
+          "durationSeconds": 30,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Giờ thì đứng bằng chân trái",
+          "durationSeconds": 20,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Được rồi đó, giờ thì xoa mông thư giãn đi",
+          "durationSeconds": 20,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Bây giờ thì nằm ngửa ... nằm thôi, không làm gì hết",
+          "durationSeconds": 60,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hết bài",
+          "durationSeconds": 10,
+          "hasGuide": true,
+          "hasMedia": false
+        }
+      ],
       "minAppVersion": "0.8.2",
       "downloadCount": 0,
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/bai-tap-dit-cua-tho-bay-mau-1.0.0.thumbnail.webp",
+      "author": "AnhPT Official",
+      "difficulty": "Beginner",
+      "intensity": "Moderate",
+      "space": "Enough room to squat and lie down",
+      "authorVerified": true,
+      "benefits": [
+        "Activate glutes and legs",
+        "Make daily lower-body training more playful"
+      ],
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/bai-tap-dit-cua-tho-bay-mau-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/bai-tap-dit-cua-tho-bay-mau-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/bai-tap-dit-cua-tho-bay-mau-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -60,24 +236,82 @@
       "name": "Bài tập gập bụng cơ bản",
       "description": "Bài tập gập bụng 12 lần giúp luyện cơ bụng với chân luôn duỗi thẳng và chuyển động có kiểm soát.",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/basic-sit-up-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-sit-up-1.0.0.workout.yaml",
       "workoutSha256": "b782419ce27d47f572d397c877b25bddd4f3f80b359db041622943ef42c9562d",
       "workoutSize": 2336,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/basic-sit-up-1.0.0.assets.zip",
-      "assetsSha256": "99ea4ec658896356e2a2415cc1c92c209b9c73875a559e6464dcef034f6d3b3b",
-      "assetsSize": 220,
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-sit-up-1.0.0.assets.zip",
+      "assetsSha256": "3a2cc2afb8ccea7aaacccf9d060c0d22cd69d3b0b87397a8a03c80b1b0e594a4",
+      "assetsSize": 385,
       "tags": [
         "abs",
         "sit-up",
         "core",
         "beginner"
       ],
+      "durationSeconds": 331,
+      "stepCount": 40,
+      "stepPreview": [
+        {
+          "name": "Chuẩn bị tư thế",
+          "durationSeconds": 28,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hướng dẫn động tác",
+          "durationSeconds": 38,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Chuẩn bị bắt đầu",
+          "durationSeconds": 10,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Ngồi dậy",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Gập người chạm chân",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Trở về tư thế nằm",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hoàn thành",
+          "durationSeconds": 15,
+          "hasGuide": true,
+          "hasMedia": false
+        }
+      ],
       "minAppVersion": "0.8.2",
       "downloadCount": 1,
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/basic-sit-up-1.0.0.thumbnail.webp",
+      "author": "AnhPT Official",
+      "difficulty": "Beginner",
+      "intensity": "Moderate",
+      "space": "Space to lie down",
+      "authorVerified": true,
+      "equipment": [
+        "Exercise mat"
+      ],
+      "benefits": [
+        "Build foundational abdominal strength",
+        "Practice controlled sit-up technique"
+      ],
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-sit-up-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/basic-sit-up-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-sit-up-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -86,24 +320,79 @@
       "name": "Bài tập Squat cơ bản",
       "description": "Bài tập Squat 10 lần giúp luyện cơ đùi và cơ mông, tập trung vào tư thế đúng và kiểm soát chuyển động.",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/basic-squat-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-squat-1.0.0.workout.yaml",
       "workoutSha256": "101662b53173e87e9403afee70ec6f7a73632b7936a86513f23d79140f7a12ed",
       "workoutSize": 2150,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/basic-squat-1.0.0.assets.zip",
-      "assetsSha256": "c19bc5167602efec632644fa246c66482245f9f6609c36112a8407ddeda74c43",
-      "assetsSize": 219,
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-squat-1.0.0.assets.zip",
+      "assetsSha256": "62afdc48c7f2290933aebead5d4bfd272cabda4f57e4412a031099a6c149733d",
+      "assetsSize": 366,
       "tags": [
         "squat",
         "legs",
         "glutes",
         "beginner"
       ],
+      "durationSeconds": 245,
+      "stepCount": 34,
+      "stepPreview": [
+        {
+          "name": "Chuẩn bị tư thế",
+          "durationSeconds": 25,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hướng dẫn động tác",
+          "durationSeconds": 35,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Chuẩn bị bắt đầu",
+          "durationSeconds": 10,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hạ xuống",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Giữ tư thế",
+          "durationSeconds": 5,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Đứng lên",
+          "durationSeconds": 5,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hoàn thành",
+          "durationSeconds": 15,
+          "hasGuide": true,
+          "hasMedia": false
+        }
+      ],
       "minAppVersion": "0.8.2",
       "downloadCount": 0,
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/basic-squat-1.0.0.thumbnail.webp",
+      "author": "AnhPT Official",
+      "difficulty": "Beginner",
+      "intensity": "Moderate",
+      "space": "Small standing area",
+      "authorVerified": true,
+      "benefits": [
+        "Strengthen legs and glutes",
+        "Learn a controlled squat pattern"
+      ],
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-squat-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/basic-squat-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-squat-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -112,19 +401,149 @@
       "name": "Tập Plank mỗi ngày",
       "description": "Bài này nên tập đều đặn mỗi ngày để nâng cơ bụng",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/daily-plank-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/daily-plank-1.0.0.workout.yaml",
       "workoutSha256": "428c393d8a0baedc88f97239ca6dacc7bfd3ecb02b774bb2a6343cf9015c999b",
       "workoutSize": 3873,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/daily-plank-1.0.0.assets.zip",
-      "assetsSha256": "4a5a2ef2c01cd2b528e8ecff06b6cfea7661c64240ac7d277aadb69dcb34445e",
-      "assetsSize": 4527978,
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/daily-plank-1.0.0.assets.zip",
+      "assetsSha256": "f55886e499fa0ef85cc77475e5b5f702d37582a1a6ea606afd5a13d42a1b869d",
+      "assetsSize": 4528134,
       "tags": [],
+      "durationSeconds": 170,
+      "stepCount": 49,
+      "stepPreview": [
+        {
+          "name": "Chuẩn bị",
+          "durationSeconds": 0,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Khởi động",
+          "durationSeconds": 0,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Nghiêng cổ qua trái",
+          "durationSeconds": 0,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Nghiêng cổ qua phải",
+          "durationSeconds": 0,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Gập cổ ra phía trước",
+          "durationSeconds": 0,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Ngửa cổ ra phía sau",
+          "durationSeconds": 0,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Gập cổ để cằm chạm ngực",
+          "durationSeconds": 0,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Lăn đầu qua trái",
+          "durationSeconds": 0,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Lăn đầu qua phải",
+          "durationSeconds": 0,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Hết phần tập cổ",
+          "durationSeconds": 0,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Plank",
+          "durationSeconds": 40,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Nghỉ",
+          "durationSeconds": 20,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Plank kết thúc",
+          "durationSeconds": 0,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hít vào, bụng phình ra",
+          "durationSeconds": 5,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Giữ hơi thở trong 10 giây",
+          "durationSeconds": 10,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Thở ra, bụng hóp lại",
+          "durationSeconds": 5,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Nín thở trong 5 giây",
+          "durationSeconds": 5,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Hoàn thành",
+          "durationSeconds": 0,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Dọn dẹp",
+          "durationSeconds": 0,
+          "hasGuide": true,
+          "hasMedia": false
+        }
+      ],
       "minAppVersion": "0.8.2",
       "downloadCount": 0,
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/daily-plank-1.0.0.thumbnail.webp",
+      "author": "AnhPT Official",
+      "difficulty": "Beginner",
+      "intensity": "Moderate",
+      "space": "Space to hold a plank",
+      "authorVerified": true,
+      "equipment": [
+        "Exercise mat"
+      ],
+      "benefits": [
+        "Improve core stability",
+        "Combine mobility, plank work, and breathing"
+      ],
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/daily-plank-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/daily-plank-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/daily-plank-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -133,12 +552,12 @@
       "name": "Heian Shodan – Karate Kata",
       "description": "Bài tập hướng dẫn Heian Shodan theo từng động tác cơ bản, phù hợp để luyện chậm và ghi nhớ trình tự.",
       "version": "1.0.3",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/heian-shodan-1.0.3.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/heian-shodan-1.0.3.workout.yaml",
       "workoutSha256": "0d290851b858e23105df9b45614dc481db88528a546fa8c2b2ab11fb3e289e29",
       "workoutSize": 4868,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/heian-shodan-1.0.3.assets.zip",
-      "assetsSha256": "8b0de658d0aa68e3e0d65eecf1ca8a37d5b411d6bae35900e9e45ad2b34e064c",
-      "assetsSize": 11609,
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/heian-shodan-1.0.3.assets.zip",
+      "assetsSha256": "11e0680cc62d6de2276cd5732a1e316c31ddd164bc4019d391fbb7f4e36fbde3",
+      "assetsSize": 11770,
       "tags": [
         "karate",
         "kata",
@@ -146,12 +565,157 @@
         "shotokan",
         "beginner"
       ],
+      "durationSeconds": 153,
+      "stepCount": 22,
+      "stepPreview": [
+        {
+          "name": "Yoi – Chuẩn bị",
+          "durationSeconds": 12,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Trái – Gedan Barai",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Oi Zuki",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Quay phải – Gedan Barai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Oi Zuki",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Quay trái – Gedan Barai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Age Uke",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Age Uke",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Age Uke và Kiai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Quay trái – Gedan Barai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Oi Zuki",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Quay phải – Gedan Barai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Oi Zuki",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Quay trái – Gedan Barai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Oi Zuki",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Oi Zuki",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến – Oi Zuki và Kiai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Quay trái – Gedan Barai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến chéo – Oi Zuki",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Quay phải – Gedan Barai",
+          "durationSeconds": 7,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Tiến chéo – Oi Zuki",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Yame – Kết thúc",
+          "durationSeconds": 12,
+          "hasGuide": true,
+          "hasMedia": false
+        }
+      ],
       "minAppVersion": "0.8.2",
       "downloadCount": 0,
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/heian-shodan-1.0.3.thumbnail.webp",
+      "author": "AnhPT Official",
+      "difficulty": "Beginner",
+      "intensity": "Moderate",
+      "space": "Open area for kata movement",
+      "authorVerified": true,
+      "benefits": [
+        "Memorize the Heian Shodan sequence",
+        "Practice stance, direction, and controlled technique"
+      ],
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/heian-shodan-1.0.3.thumbnail.webp",
       "thumbnailSha256": "1320e8b2e7adc75f29d9286a950969b4f8bab3d5aa4f4eec6b0be2bab7ab99ad",
       "thumbnailSize": 5564,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/heian-shodan-1.0.3.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/heian-shodan-1.0.3.featureImage.webp",
       "featureImageSha256": "8d821664e16dc06e9d478a198c1953b70ef55cfb72b643299a203feaab154c9f",
       "featureImageSize": 47546
     },
@@ -160,24 +724,91 @@
       "name": "Thiền hơi thở trước khi ngủ",
       "description": "Bài thiền nhẹ nhàng giúp tập trung vào hơi thở, hít thở sâu, thả lỏng cơ thể và chuẩn bị cho một giấc ngủ yên. Hãy tập ở tư thế nằm hoặc ngồi thoải mái, trong không gian yên tĩnh.",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/meditation-before-sleep-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/meditation-before-sleep-1.0.0.workout.yaml",
       "workoutSha256": "4bf9a87b98858c39607039e0cb4be3e1c997b1e6dd537cba584df28c3176b9af",
       "workoutSize": 2732,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/meditation-before-sleep-1.0.0.assets.zip",
-      "assetsSha256": "e4b3f46e7cfb8e40e765829cc0e194395f5e06f62a64029fe673cc3512b3d8fb",
-      "assetsSize": 20925330,
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/meditation-before-sleep-1.0.0.assets.zip",
+      "assetsSha256": "635af1aa1ab817378512433e54ef2e80133f2af26eafd807a60533848a1786ab",
+      "assetsSize": 20925476,
       "tags": [
         "meditation",
         "breathing",
         "relaxation",
         "sleep"
       ],
+      "durationSeconds": 860,
+      "stepCount": 23,
+      "stepPreview": [
+        {
+          "name": "Ổn định tư thế",
+          "durationSeconds": 60,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Nhận biết hơi thở",
+          "durationSeconds": 120,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hít thở sâu",
+          "durationSeconds": 0,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Hít vào",
+          "durationSeconds": 4,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Thở ra chậm",
+          "durationSeconds": 6,
+          "hasGuide": false,
+          "hasMedia": false
+        },
+        {
+          "name": "Trở về hơi thở tự nhiên",
+          "durationSeconds": 240,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Thả lỏng toàn thân",
+          "durationSeconds": 180,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Buông ngày hôm nay",
+          "durationSeconds": 120,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Kết thúc nhẹ nhàng",
+          "durationSeconds": 60,
+          "hasGuide": true,
+          "hasMedia": false
+        }
+      ],
       "minAppVersion": "0.8.2",
       "downloadCount": 0,
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/meditation-before-sleep-1.0.0.thumbnail.webp",
+      "author": "AnhPT Official",
+      "difficulty": "Beginner",
+      "intensity": "Gentle",
+      "space": "A quiet place to sit or lie down",
+      "authorVerified": true,
+      "benefits": [
+        "Release tension before sleep",
+        "Slow the breath and settle the mind"
+      ],
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/meditation-before-sleep-1.0.0.thumbnail.webp",
       "thumbnailSha256": "914c144fe1e590c9021e452ed1763ea8acd001ec5cef5adf13d7b5c95e7aa085",
       "thumbnailSize": 5164,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-17/meditation-before-sleep-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/meditation-before-sleep-1.0.0.featureImage.webp",
       "featureImageSha256": "47872abbfaccf1d2cebe2a4f64bea832a380eedb3a68e699e4ce31cca5f6a5d1",
       "featureImageSize": 44278
     }
