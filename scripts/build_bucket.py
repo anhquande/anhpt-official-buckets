@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import re
 import shutil
 import sys
 import zipfile
@@ -79,6 +80,60 @@ def artwork_category(tags: list) -> str:
         "kata": "martial-arts",
     }
     return categories.get(first_tag, "strength")
+
+
+def duration_seconds(value) -> int:
+    if value is None:
+        return 0
+    if isinstance(value, (int, float)):
+        return max(0, int(value))
+    text = str(value).strip().lower()
+    matches = re.findall(r"(\d+(?:\.\d+)?)\s*(h|m|s)", text)
+    if not matches:
+        fail(f"Invalid workout duration: {value}")
+    multiplier = {"h": 3600, "m": 60, "s": 1}
+    return int(sum(float(amount) * multiplier[unit] for amount, unit in matches))
+
+
+def workout_summary(workout: dict) -> tuple[int, int, list[dict]]:
+    exercises = workout.get("exercises") or []
+    media_exercises = {
+        str(item.get("id"))
+        for item in exercises
+        if isinstance(item, dict)
+        and item.get("id") is not None
+        and (item.get("demo_media") or item.get("demo_video"))
+    }
+    preview = []
+
+    def visit(nodes: list) -> tuple[int, int]:
+        total_duration = 0
+        total_steps = 0
+        for node in nodes:
+            if not isinstance(node, dict):
+                continue
+            if "repeat" in node:
+                repeat = int(node.get("repeat") or 0)
+                child_duration, child_steps = visit(node.get("steps") or [])
+                total_duration += child_duration * repeat
+                total_steps += child_steps * repeat
+                continue
+            name = str(node.get("name") or "").strip()
+            if not name:
+                continue
+            seconds = duration_seconds(node.get("duration"))
+            total_duration += seconds
+            total_steps += 1
+            preview.append({
+                "name": name,
+                "durationSeconds": seconds,
+                "hasGuide": bool(str(node.get("guide") or "").strip()),
+                "hasMedia": str(node.get("exercise") or "") in media_exercises,
+            })
+        return total_duration, total_steps
+
+    duration, step_count = visit(workout.get("steps") or [])
+    return duration, step_count, preview
 
 
 def demonstration_assets(workout_dir: Path, workout: dict) -> list[dict]:
@@ -223,6 +278,7 @@ def main() -> int:
         tags = workout.get("tags") or []
         if not isinstance(tags, list):
             fail(f"{workout_path}: tags must be a list")
+        duration, step_count, step_preview = workout_summary(workout)
 
         artifact_stem = f"{package_id}-{package_version}"
         workout_name = f"{artifact_stem}.workout.yaml"
@@ -283,12 +339,23 @@ def main() -> int:
             "assetsSha256": sha256(assets_output_path),
             "assetsSize": assets_output_path.stat().st_size,
             "tags": [str(tag) for tag in tags],
+            "durationSeconds": duration,
+            "stepCount": step_count,
+            "stepPreview": step_preview,
             "minAppVersion": min_app_version,
             "downloadCount": download_counts.get(package_id, 0),
         }
 
-        if manifest.get("author"):
-            entry["author"] = str(manifest["author"])
+        for field in ("author", "difficulty", "intensity", "space"):
+            if manifest.get(field):
+                entry[field] = str(manifest[field])
+        entry["authorVerified"] = bool(manifest.get("authorVerified", False))
+        for field in ("equipment", "benefits"):
+            values = manifest.get(field) or []
+            if not isinstance(values, list) or any(not isinstance(value, str) for value in values):
+                fail(f"{manifest_path}: {field} must be a list of strings")
+            if values:
+                entry[field] = values
 
         for artwork, source in artwork_sources.items():
             if not source.is_file():

@@ -100,6 +100,9 @@ Fields:
 * `minAppVersion` — minimum AnhPT application version required to install the workout.
 * `thumbnailFile` — optional small list-card image.
 * `featureImageFile` — optional larger workout-detail background image.
+* `author` and `authorVerified` — creator identity and trusted verification.
+* `difficulty`, `intensity`, `equipment`, `space`, and `benefits` — curated
+  pre-download discovery information.
 
 The package version is intentionally stored separately from the workout YAML schema version.
 
@@ -273,6 +276,8 @@ The following values are calculated automatically during the build:
 * `assetsUrl`, `assetsSha256`, `assetsSize`
 * optional `thumbnailUrl`, `thumbnailSha256`, `thumbnailSize`
 * optional `featureImageUrl`, `featureImageSha256`, `featureImageSize`
+* derived `durationSeconds`, expanded `stepCount`, and `stepPreview`
+* curated author, difficulty, intensity, equipment, space, and benefits
 
 These values should not be maintained manually.
 

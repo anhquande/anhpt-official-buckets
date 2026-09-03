@@ -3,5 +3,15 @@
   "workoutFile": "workout.yaml",
   "id": "daily-plank",
   "version": "1.0.0",
-  "minAppVersion": "0.8.2"
+  "minAppVersion": "0.8.2",
+  "author": "AnhPT Official",
+  "authorVerified": true,
+  "difficulty": "Beginner",
+  "intensity": "Moderate",
+  "equipment": ["Exercise mat"],
+  "space": "Space to hold a plank",
+  "benefits": [
+    "Improve core stability",
+    "Combine mobility, plank work, and breathing"
+  ]
 }
