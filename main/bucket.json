@@ -35,7 +35,7 @@
         "daily"
       ],
       "minAppVersion": "0.8.2",
-      "downloadCount": 3
+      "downloadCount": 7
     },
     {
       "id": "basic-sit-up",
@@ -52,7 +52,7 @@
         "beginner"
       ],
       "minAppVersion": "0.8.2",
-      "downloadCount": 1
+      "downloadCount": 5
     },
     {
       "id": "basic-squat",
@@ -69,7 +69,7 @@
         "beginner"
       ],
       "minAppVersion": "0.8.2",
-      "downloadCount": 1
+      "downloadCount": 6
     },
     {
       "id": "daily-plank",
@@ -81,7 +81,7 @@
       "size": 4529406,
       "tags": [],
       "minAppVersion": "0.8.2",
-      "downloadCount": 9
+      "downloadCount": 13
     },
     {
       "id": "heian-shodan",
@@ -99,7 +99,7 @@
         "beginner"
       ],
       "minAppVersion": "0.8.2",
-      "downloadCount": 4
+      "downloadCount": 8
     },
     {
       "id": "meditation-before-sleep",
@@ -116,7 +116,7 @@
         "sleep"
       ],
       "minAppVersion": "0.8.2",
-      "downloadCount": 1
+      "downloadCount": 5
     }
   ]
 }
