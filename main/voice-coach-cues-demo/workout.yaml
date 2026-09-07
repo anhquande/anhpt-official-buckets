@@ -1,0 +1,86 @@
+version: 2
+
+name: Voice Coach Cues Demo
+description: A short demo workout for AnhPT step-level Voice Coach cues, including pre-start preparation, halfway, remaining-time, next-step and completion announcements.
+
+tags:
+  - demo
+  - voice
+  - coach
+  - beginner
+
+start_countdown: 3s
+
+voice:
+  language: en
+  timing:
+    elapsed_time: false
+    interval: false
+    final_countdown: false
+  announce_step_name: true
+  announce_start: true
+  announce_finish: true
+
+feedback:
+  sound: beep
+  haptic: medium
+
+audio:
+  ducking: medium
+
+steps:
+  - name: March in Place
+    id: march-in-place
+    duration: 30s
+    countdown: false
+    guide: >
+      March gently in place. This step demonstrates the full Voice Coach sequence. Listen for halfway, remaining time, the next step, and the completion cue.
+    voice_cues:
+      announce_next: true
+      get_ready: true
+      countdown: true
+      halfway: true
+      remaining_time: 10
+      completion: true
+
+  - name: Quick Shake Out
+    id: quick-shake-out
+    duration: 6s
+    countdown: false
+    guide: >
+      Shake out your arms and legs. This step is intentionally very short, so AnhPT should suppress timing cues that cannot fit naturally.
+    voice_cues:
+      announce_next: true
+      get_ready: true
+      countdown: true
+      halfway: true
+      remaining_time: 10
+      completion: true
+
+  - name: Bodyweight Squats
+    id: bodyweight-squats
+    duration: 20s
+    countdown: false
+    guide: >
+      Perform comfortable bodyweight squats. This step focuses on a configurable remaining-time cue followed by an announcement of the next exercise.
+    voice_cues:
+      announce_next: true
+      get_ready: true
+      countdown: true
+      halfway: false
+      remaining_time: 10
+      completion: true
+
+  - name: Cool Down Breathing
+    id: cool-down-breathing
+    duration: 15s
+    countdown: false
+    guide: >
+      Stand comfortably and breathe slowly. This is the final step, so an announce-next request has no next exercise and is ignored automatically.
+    voice_cues:
+      announce_next: true
+      get_ready: false
+      countdown: false
+      halfway: true
+      remaining_time: 0
+      completion: true
