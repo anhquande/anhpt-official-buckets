@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "workoutFile": "workout.yaml",
+  "id": "voice-coach-cues-demo-vi",
+  "version": "1.0.0",
+  "minAppVersion": "0.19.0",
+  "author": "AnhPT Official",
+  "authorVerified": true,
+  "difficulty": "Beginner",
+  "intensity": "Low",
+  "equipment": [],
+  "space": "Khu vực tập nhỏ",
+  "benefits": [
+    "Minh họa các Voice Coach cue theo từng bước bằng tiếng Việt",
+    "Cho thấy AnhPT tự bỏ các cue quá dày khi bước tập quá ngắn"
+  ]
+}
