@@ -1,0 +1,86 @@
+version: 2
+
+name: Demo Voice Coach tiếng Việt
+description: Bài tập ngắn để minh họa các thông báo Voice Coach theo từng bước, gồm chuẩn bị, đếm ngược, nửa chặng, thời gian còn lại, bài tiếp theo và hoàn thành bước.
+
+tags:
+  - demo
+  - voice
+  - vietnamese
+  - beginner
+
+start_countdown: 0s
+
+voice:
+  language: vi
+  timing:
+    elapsed_time: false
+    interval: false
+    final_countdown: false
+  announce_step_name: true
+  announce_start: true
+  announce_finish: true
+
+feedback:
+  sound: beep
+  haptic: medium
+
+audio:
+  ducking: medium
+
+steps:
+  - name: Đi bộ tại chỗ
+    id: di-bo-tai-cho
+    duration: 30s
+    countdown: false
+    guide: >
+      Đi bộ nhẹ nhàng tại chỗ. Hãy nghe các thông báo ở nửa chặng, thời gian còn lại, bài tiếp theo và khi hoàn thành bước.
+    voice_cues:
+      announce_next: true
+      get_ready: true
+      countdown: true
+      halfway: true
+      remaining_time: 10
+      completion: true
+
+  - name: Thả lỏng nhanh
+    id: tha-long-nhanh
+    duration: 6s
+    countdown: false
+    guide: >
+      Lắc nhẹ tay và chân để thả lỏng. Bước này cố tình rất ngắn để AnhPT tự bỏ các thông báo không đủ thời gian phát tự nhiên.
+    voice_cues:
+      announce_next: true
+      get_ready: true
+      countdown: true
+      halfway: true
+      remaining_time: 10
+      completion: true
+
+  - name: Squat không tạ
+    id: squat-khong-ta
+    duration: 20s
+    countdown: false
+    guide: >
+      Thực hiện squat với tốc độ thoải mái. Hãy nghe thông báo còn 10 giây và tên bài tiếp theo.
+    voice_cues:
+      announce_next: true
+      get_ready: true
+      countdown: true
+      halfway: false
+      remaining_time: 10
+      completion: true
+
+  - name: Hít thở thư giãn
+    id: hit-tho-thu-gian
+    duration: 15s
+    countdown: false
+    guide: >
+      Đứng thoải mái và hít thở chậm. Đây là bước cuối nên AnhPT sẽ không báo bài tiếp theo dù tùy chọn này đang được bật.
+    voice_cues:
+      announce_next: true
+      get_ready: false
+      countdown: false
+      halfway: true
+      remaining_time: 0
+      completion: true
