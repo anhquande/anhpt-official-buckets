@@ -7,11 +7,11 @@
       "name": "AnhPT Feature Demo",
       "description": "A short interactive workout that demonstrates voice guidance, camera comparison, video layouts, pause/resume, progress and repeat steps.",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/anhpt-feature-demo-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/anhpt-feature-demo-1.0.0.workout.yaml",
       "workoutSha256": "74240c8212ef779432dac3306b0fa99d7ec3d65ce7bca862445dbd3973dea96d",
       "workoutSize": 2077,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/anhpt-feature-demo-1.0.0.assets.zip",
-      "assetsSha256": "e3d3eea0335dea996d88cd1588427bfdf1894dc7e20d1ddfd6b27ab4d36ff50f",
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/anhpt-feature-demo-1.0.0.assets.zip",
+      "assetsSha256": "b57011209cb50ba13e38f0286aeb7b007b31dae2dfabc578216fc8d9808498e5",
       "assetsSize": 9030,
       "tags": [
         "demo",
@@ -65,10 +65,10 @@
         "Explore voice guidance and visual demonstrations",
         "Try a balanced mix of strength, rest, and movement"
       ],
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/anhpt-feature-demo-1.0.0.thumbnail.webp",
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/anhpt-feature-demo-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/anhpt-feature-demo-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/anhpt-feature-demo-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -77,11 +77,11 @@
       "name": "Tập đít với chị Xô",
       "description": "Nếu ai hỏi mày tập cái này làm cái giề, thì trả lời là tập cho đít bự chứ làm gì nữa",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/bai-tap-dit-cua-tho-bay-mau-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/bai-tap-dit-cua-tho-bay-mau-1.0.0.workout.yaml",
       "workoutSha256": "a94d8e7e9d99102aeb28578357eb8c727378189dd3090d1660e0c706af94e9c8",
       "workoutSize": 2939,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/bai-tap-dit-cua-tho-bay-mau-1.0.0.assets.zip",
-      "assetsSha256": "54450dd50563c0a515e137dac89243d860c91f13c997e7b7f5ccb7a47556c593",
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/bai-tap-dit-cua-tho-bay-mau-1.0.0.assets.zip",
+      "assetsSha256": "e0b0e00dbdd71235616f07f2419dcbfc87baef02617c283d6c81fd2c51e29328",
       "assetsSize": 393,
       "tags": [
         "funny",
@@ -224,10 +224,10 @@
         "Activate glutes and legs",
         "Make daily lower-body training more playful"
       ],
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/bai-tap-dit-cua-tho-bay-mau-1.0.0.thumbnail.webp",
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/bai-tap-dit-cua-tho-bay-mau-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/bai-tap-dit-cua-tho-bay-mau-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/bai-tap-dit-cua-tho-bay-mau-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -236,11 +236,11 @@
       "name": "Bài tập gập bụng cơ bản",
       "description": "Bài tập gập bụng 12 lần giúp luyện cơ bụng với chân luôn duỗi thẳng và chuyển động có kiểm soát.",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-sit-up-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/basic-sit-up-1.0.0.workout.yaml",
       "workoutSha256": "b782419ce27d47f572d397c877b25bddd4f3f80b359db041622943ef42c9562d",
       "workoutSize": 2336,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-sit-up-1.0.0.assets.zip",
-      "assetsSha256": "3a2cc2afb8ccea7aaacccf9d060c0d22cd69d3b0b87397a8a03c80b1b0e594a4",
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/basic-sit-up-1.0.0.assets.zip",
+      "assetsSha256": "a5a76be3ede4ddd44b84664b5d57fe384f30982711b8b028720cdfaac4d9b761",
       "assetsSize": 385,
       "tags": [
         "abs",
@@ -308,10 +308,10 @@
         "Build foundational abdominal strength",
         "Practice controlled sit-up technique"
       ],
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-sit-up-1.0.0.thumbnail.webp",
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/basic-sit-up-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-sit-up-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/basic-sit-up-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -320,11 +320,11 @@
       "name": "Bài tập Squat cơ bản",
       "description": "Bài tập Squat 10 lần giúp luyện cơ đùi và cơ mông, tập trung vào tư thế đúng và kiểm soát chuyển động.",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-squat-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/basic-squat-1.0.0.workout.yaml",
       "workoutSha256": "101662b53173e87e9403afee70ec6f7a73632b7936a86513f23d79140f7a12ed",
       "workoutSize": 2150,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-squat-1.0.0.assets.zip",
-      "assetsSha256": "62afdc48c7f2290933aebead5d4bfd272cabda4f57e4412a031099a6c149733d",
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/basic-squat-1.0.0.assets.zip",
+      "assetsSha256": "e39a32a0a8ccc0e0317389e4881422773b83d7c028fd5491add7c0f87c1facea",
       "assetsSize": 366,
       "tags": [
         "squat",
@@ -389,10 +389,10 @@
         "Strengthen legs and glutes",
         "Learn a controlled squat pattern"
       ],
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-squat-1.0.0.thumbnail.webp",
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/basic-squat-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/basic-squat-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/basic-squat-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -401,11 +401,11 @@
       "name": "Tập Plank mỗi ngày",
       "description": "Bài này nên tập đều đặn mỗi ngày để nâng cơ bụng",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/daily-plank-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/daily-plank-1.0.0.workout.yaml",
       "workoutSha256": "428c393d8a0baedc88f97239ca6dacc7bfd3ecb02b774bb2a6343cf9015c999b",
       "workoutSize": 3873,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/daily-plank-1.0.0.assets.zip",
-      "assetsSha256": "f55886e499fa0ef85cc77475e5b5f702d37582a1a6ea606afd5a13d42a1b869d",
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/daily-plank-1.0.0.assets.zip",
+      "assetsSha256": "b20d40b10f10f2cd58def89540be044dbfb5bb4fbeedbd4bb5ee729bde618923",
       "assetsSize": 4528134,
       "tags": [],
       "durationSeconds": 170,
@@ -540,10 +540,10 @@
         "Improve core stability",
         "Combine mobility, plank work, and breathing"
       ],
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/daily-plank-1.0.0.thumbnail.webp",
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/daily-plank-1.0.0.thumbnail.webp",
       "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
       "thumbnailSize": 10256,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/daily-plank-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/daily-plank-1.0.0.featureImage.webp",
       "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
       "featureImageSize": 75296
     },
@@ -552,11 +552,11 @@
       "name": "Heian Shodan – Karate Kata",
       "description": "Bài tập hướng dẫn Heian Shodan theo từng động tác cơ bản, phù hợp để luyện chậm và ghi nhớ trình tự.",
       "version": "1.0.3",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/heian-shodan-1.0.3.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/heian-shodan-1.0.3.workout.yaml",
       "workoutSha256": "0d290851b858e23105df9b45614dc481db88528a546fa8c2b2ab11fb3e289e29",
       "workoutSize": 4868,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/heian-shodan-1.0.3.assets.zip",
-      "assetsSha256": "11e0680cc62d6de2276cd5732a1e316c31ddd164bc4019d391fbb7f4e36fbde3",
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/heian-shodan-1.0.3.assets.zip",
+      "assetsSha256": "5facd91aa7ad1b34e852e1fc1f7498c3868395f38d1e29f954e7f0465aaad1b9",
       "assetsSize": 11770,
       "tags": [
         "karate",
@@ -712,10 +712,10 @@
         "Memorize the Heian Shodan sequence",
         "Practice stance, direction, and controlled technique"
       ],
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/heian-shodan-1.0.3.thumbnail.webp",
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/heian-shodan-1.0.3.thumbnail.webp",
       "thumbnailSha256": "1320e8b2e7adc75f29d9286a950969b4f8bab3d5aa4f4eec6b0be2bab7ab99ad",
       "thumbnailSize": 5564,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/heian-shodan-1.0.3.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/heian-shodan-1.0.3.featureImage.webp",
       "featureImageSha256": "8d821664e16dc06e9d478a198c1953b70ef55cfb72b643299a203feaab154c9f",
       "featureImageSize": 47546
     },
@@ -724,11 +724,11 @@
       "name": "Thiền hơi thở trước khi ngủ",
       "description": "Bài thiền nhẹ nhàng giúp tập trung vào hơi thở, hít thở sâu, thả lỏng cơ thể và chuẩn bị cho một giấc ngủ yên. Hãy tập ở tư thế nằm hoặc ngồi thoải mái, trong không gian yên tĩnh.",
       "version": "1.0.0",
-      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/meditation-before-sleep-1.0.0.workout.yaml",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/meditation-before-sleep-1.0.0.workout.yaml",
       "workoutSha256": "4bf9a87b98858c39607039e0cb4be3e1c997b1e6dd537cba584df28c3176b9af",
       "workoutSize": 2732,
-      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/meditation-before-sleep-1.0.0.assets.zip",
-      "assetsSha256": "635af1aa1ab817378512433e54ef2e80133f2af26eafd807a60533848a1786ab",
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/meditation-before-sleep-1.0.0.assets.zip",
+      "assetsSha256": "7cae011f8e7621f4b48b8309668a9816b66fd69ca7e0a7f4c42954f18e028d7e",
       "assetsSize": 20925476,
       "tags": [
         "meditation",
@@ -805,12 +805,75 @@
         "Release tension before sleep",
         "Slow the breath and settle the mind"
       ],
-      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/meditation-before-sleep-1.0.0.thumbnail.webp",
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/meditation-before-sleep-1.0.0.thumbnail.webp",
       "thumbnailSha256": "914c144fe1e590c9021e452ed1763ea8acd001ec5cef5adf13d7b5c95e7aa085",
       "thumbnailSize": 5164,
-      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-18/meditation-before-sleep-1.0.0.featureImage.webp",
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/meditation-before-sleep-1.0.0.featureImage.webp",
       "featureImageSha256": "47872abbfaccf1d2cebe2a4f64bea832a380eedb3a68e699e4ce31cca5f6a5d1",
       "featureImageSize": 44278
+    },
+    {
+      "id": "voice-coach-cues-demo",
+      "name": "Voice Coach Cues Demo",
+      "description": "A short demo workout for AnhPT step-level Voice Coach cues, including pre-start preparation, halfway, remaining-time, next-step and completion announcements.",
+      "version": "1.0.0",
+      "workoutUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/voice-coach-cues-demo-1.0.0.workout.yaml",
+      "workoutSha256": "b042055544299c6af79a091d11b3e78e12565bb6275d382af6b8b0b28536c005",
+      "workoutSize": 2167,
+      "assetsUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/voice-coach-cues-demo-1.0.0.assets.zip",
+      "assetsSha256": "2f05efe0da3b26293cf4c12f8403323b37896335a36bbd16c137845ee1aa534c",
+      "assetsSize": 389,
+      "tags": [
+        "demo",
+        "voice",
+        "coach",
+        "beginner"
+      ],
+      "durationSeconds": 71,
+      "stepCount": 4,
+      "stepPreview": [
+        {
+          "name": "March in Place",
+          "durationSeconds": 30,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Quick Shake Out",
+          "durationSeconds": 6,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Bodyweight Squats",
+          "durationSeconds": 20,
+          "hasGuide": true,
+          "hasMedia": false
+        },
+        {
+          "name": "Cool Down Breathing",
+          "durationSeconds": 15,
+          "hasGuide": true,
+          "hasMedia": false
+        }
+      ],
+      "minAppVersion": "0.15.0",
+      "downloadCount": 0,
+      "author": "AnhPT Official",
+      "difficulty": "Beginner",
+      "intensity": "Low",
+      "space": "Small workout area",
+      "authorVerified": true,
+      "benefits": [
+        "Demonstrate step-level Voice Coach cues",
+        "Show how AnhPT suppresses overly dense cues on short steps"
+      ],
+      "thumbnailUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/voice-coach-cues-demo-1.0.0.thumbnail.webp",
+      "thumbnailSha256": "d362aebabe3f5eeb84125b507fd2081344a4df5a15dc1eb1930bf286d85cdaa2",
+      "thumbnailSize": 10256,
+      "featureImageUrl": "https://github.com/anhquande/anhpt-official-buckets/releases/download/bucket-19/voice-coach-cues-demo-1.0.0.featureImage.webp",
+      "featureImageSha256": "63f9bf0c81bfd303af8f87ff5af3d16e953e735ff324374bcf1ba8770614f83e",
+      "featureImageSize": 75296
     }
   ]
 }
